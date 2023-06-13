@@ -4,6 +4,10 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App,{Shubham} from './App';
 import Bookslist from './Bookslist';
+import "jquery"
+import "@popperjs/core/dist/umd/popper"
+import "bootstrap/dist/js/bootstrap"
+import "bootstrap/dist/css/bootstrap.css"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

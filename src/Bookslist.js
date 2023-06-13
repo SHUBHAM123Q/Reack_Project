@@ -1,15 +1,17 @@
 import React from 'react'
 import Book from './Book'
-import mybook from './mybook.json'
+// import mybook from './mybook.json'
+import fack from './fack.json'
+
 
 const Bookslist = () => {
   return (
     <>
-      {mybook.map((ele1) =>{
+      {fack.map((ele1) =>{
         return(
-        <div>
-          <Book image={ele1.image} title={ele1.title} author={ele1.author} price={ele1.price} />
-        </div>
+        
+          <Book userId={ele1.userId} id={ele1.id} title={ele1.title} completed={ele1.completed} />
+        
         )
       })}
     </>

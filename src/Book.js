@@ -1,16 +1,18 @@
 import React from 'react'
 
 const Book = (props) => {
-  const {image , title , author , price } = props;
+  const {userId , id , title , completed } = props;
   return (
-    <div>
-      <img src={image} alt='Not Show' style={{height:"300px"}}/>
-      <h2>{title}</h2>
-      <p>{author}</p>
-      <p>{price}</p>
-      <button>Add To Cadt</button>
-
-    </div>
+    <>
+      <div className='inline-block border-2 border-green-400 max-h-[100px] max-w-[100px] overflow-hidden'>
+        <div>
+          <p>{userId}</p>
+          <p>{id}</p>
+          <p>{title}</p>
+          <p>{completed}</p>
+        </div>
+      </div>
+    </>
   )
 }
 
