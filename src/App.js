@@ -1,20 +1,44 @@
 import React from 'react'
-import './App.css';
 
-const App = () => {
-  return (
+// const itemlist =["car","bus"];
+// const Find=itemlist.includes("car");
+
+// let car =() =>{
+//   return<h1>Shubham</h1>
+// }
+
+// let bus = () =>{
+//   return<h1>Ram</h1>
+// }
+
+
+// function List({Item , Status , isStock}){
+//   if(isStock){
+//     return(
+//       <li>{Item}</li>
+//     )
+//   }
+//   return <li>{Status}</li>
+//   // return(
+//   //   <li>{isStock ? Item :<h1><ins>{Status}</ins></h1>} </li>
+//   // )
+// }
+
+
+// const App = () => {
+//   return (
+//     <div>
+//       <ul>
+//         <List Item ={car()}  Status={bus()} isStock={Find}/>
+//       </ul>
+//     </div>
+//   )
+// }
+function App(){
+  <>
     <div>
-      <h1>shubham</h1>
-    </div>
-  )
-}
 
-export const Shubham =() =>{
-  return (
-    <div>
-      <h1>Shubham</h1>
     </div>
-  )
+  </>
 }
-
-export default App;
+export default App
