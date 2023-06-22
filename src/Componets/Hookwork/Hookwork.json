@@ -1,18 +1,149 @@
 [
     {
-        "id": 1,
-        "name": "shubham",
-        "type": "dance"
+      "id":1,
+      "author": "Vinit Karnik",
+      "country": "Nigeria",
+      "language": "English",
+      "pages": 209,
+      "title": "Things Fall Apart",
+      "year": 1958,
+      "img":"https://www.risc.org.uk/images/events/risc/book-the-museum-of-innocence.jpg"
     },
     {
-        "id": 2,
-        "name": "shyam",
-        "type": "dance"
-      
+      "id":2,
+      "author": "Dr Sreeram Chauliahas",
+      "country": "Denmark",
+      "language": "Danish",
+      "pages": 784,
+      "title": "Fairy tales",
+      "year": 1836,
+      "img":"https://images.squarespace-cdn.com/content/v1/5e9c14704b2596791f536c48/1590921268756-1IE5AJDMIWP416XH8TEL/IMG_9138.JPG"
+  
     },
     {
-        "id": 3,
-        "name": "aryan",
-        "type": "dance"
+      "id":3,
+      "author": "Vinit Karnik",
+      "country": "Italy",
+      "language": "Italian",
+      "pages": 928,
+      "title": "The Divine Comedy",
+      "year": 1315,
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlWjinbXg_KDv1V2Vc4knlyfbkSjP34Oy6wzxNp1LzwQ6MHAzBk5HxvUw02pkoNuvLRyc&usqp=CAU"
+    },
+    {
+      "id":4,
+      "author": "Dr Sreeram Chauliahas",
+      "country": "Sumer and Akkadian Empire",
+      "language": "Akkadian",
+      "pages": 160,
+      "title": "The Epic Of Gilgamesh",
+      "year": 1700,
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScQI4_3Tj0q9BgXjnJgI-Wsbz_u9Uask7BU4DhokpPe97c4OaY9WnDQ1Vh0C_7voklP_Q&usqp=CAU"
+    },
+    {
+      "author": "Vinit Karnik",
+      "country": "Achaemenid Empire",
+      "language": "Hebrew",
+      "pages": 176,
+      "title": "The Book Of Job",
+      "year": 600,
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf26OcIPoIy6UHTR2LUTU679AbYZ8RiEzM6-Mg1OyDsMTgFTIvHKGaBCD2yobN9tau3e8&usqp=CAU"
+    },
+    {
+      "id":5,
+      "author": "Dr Sreeram Chauliahas",
+      "country": "India/Iran/Iraq/Egypt/Tajikistan",
+      "language": "Arabic",
+      "pages": 288,
+      "title": "One Thousand and One Nights",
+      "year": 1200,
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaMv7IF7zAaCg_bGnaKB62MUZ33pvHyQ5UvKpokhofb71YerE1BCUBnV1dAfOwWRIoIKA&usqp=CAU"
+    },
+    {
+      "id":6,
+      "author": "Vinit Karnik",
+      "country": "Iceland",
+      "language": "Old Norse",
+      "pages": 384,
+      "title": "Nj\u00e1l's Saga",
+      "year": 1350,
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSL_wPGRS8AwLliFO-9-Qt4vRHjS7fphQkZQRRjAZst_lCbM_LiWSDsqML9giuSdbptUg&usqp=CAU"
+    },
+    {
+      "id":7,
+      "author": "Dr Sreeram Chauliahas",
+      "country": "United Kingdom",
+      "language": "English",
+      "pages": 226,
+      "title": "Pride and Prejudice",
+      "year": 1813,
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiWkOLbC1h2R-dN2s8TYIMET7PH_W5F1j5t0VOnbx-3e-2bLUJFLMTXSCj_DmxMwV9SDg&usqp=CAU"
+    },
+    {
+      "author": "Vinit Karnik",
+      "country": "France",
+      "language": "French",
+      "pages": 443,
+      "title": "Le P\u00e8re Goriot",
+      "year": 1835,
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTst5Ysk6x4BFZzqXG6zAG-Gf1t_E7HjISPy1H31z2UAnd93U-XG4J2orWagFrlIl-OqK8&usqp=CAU"
+    },
+    {
+      "id":8,
+      "author": "Dr Sreeram Chauliahas",
+      "country": "France",
+      "language": "French",
+      "pages": 443,
+      "title": "Le P\u00e8re Goriot",
+      "year": 1835,
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhbVsg6cXZMSL-9O9-sF-Mo39jxuQxiPXYS3OVr_544k5FdvJBiCcg4lInu9K2AriwuWI&usqp=CAU"
+    },
+    {
+      "id":9,
+      "author": "Ruskin Bond",
+      "country": "France",
+      "language": "French",
+      "pages": 443,
+      "title": "Le P\u00e8re Goriot",
+      "year": 1835,
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ2XMEwKBIlgs4c-mjKo_btWPpqIgLoUfF-y-TF7_bshw6g_YDtgWWHhLwNrr3c_JjaQs&usqp=CAU"
+    },
+    {
+      "id":10,
+      "author": "Ruskin Bond",
+      "country": "France",
+      "language": "French",
+      "pages": 443,
+      "title": "Le P\u00e8re Goriot",
+      "year": 1835,
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkLErdNQb94G2hQCLcXo7pqmA_oPjZTBMh0Cm7-sByVxG3rYplk77lzcwIVJ3NS9qADRA&usqp=CAU"
+    },
+    {
+      "author": "Ruskin Bond",
+      "country": "France",
+      "language": "French",
+      "pages": 443,
+      "title": "Le P\u00e8re Goriot",
+      "year": 1835,
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNqcts3k01U4RUhNkYfgtTrls3iK-OW0olSDgyr1qFcZKeCaQWH5e5uRXgub62gmPB-zk&usqp=CAU"
+    },
+    {
+      "author": "Ruskin Bond",
+      "country": "France",
+      "language": "French",
+      "pages": 443,
+      "title": "Le P\u00e8re Goriot",
+      "year": 1835,
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSkEEyg26WRwQawcw1Te_rUZkNgRu-itm0tugGkPM2JFCeAWGrjEXKv5WnjLTKP4A8YkU&usqp=CAU"
+    },
+    {
+      "id":11,
+      "author": "Ruskin Bond",
+      "country": "France",
+      "language": "French",
+      "pages": 443,
+      "title": "Le P\u00e8re Goriot",
+      "year": 1835,
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWHfdiVWFCCbriH3ufOhmur2NQouwbKi1d7IikzyGQR4ECWbg4D6YVmX1mVds-V3crFQk&usqp=CAU"
     }
-]
+  ] 
