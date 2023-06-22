@@ -12,6 +12,8 @@ const Filter1 = (props) => {
           <td><p className='text-center'>{pages}</p></td>
           <td><p className='text-center'>{title}</p></td>
           <td><p className='text-center'>{year}</p></td>
+          <td><button className='m-auto flex'>Remove</button></td>
+
         </tr>
     </>
   )

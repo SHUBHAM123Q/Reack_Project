@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Filters from './Filters.json'
 import Filter1 from './Filter1';
 
+
 const Filterdata = () => {
     var from =["Dr Sreeram Chauliahas","Vinit Karnik"];
+
+    // const [ndata,setData]=useState();
+
+    // const handleRemove = (itemId) =>{
+    //     setData(nData.filter(item=> item.id !==itemId))
+    // }
   return (
     <>
         <table>
@@ -15,6 +22,7 @@ const Filterdata = () => {
                 <th className='w-[100px] bg-purple-300 text-center border-2'>Pages</th>
                 <th className='w-[250px] bg-green-500 text-center border-2'>Title</th>
                 <th className='w-[50px] bg-red-500 text-center border-2'>Year</th>
+                <th className='w-[150px] bg-green-500 text-center border-2'>Remove</th>
             </thead>
     
 

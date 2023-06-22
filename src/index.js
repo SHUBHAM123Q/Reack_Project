@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import App from './Componets/App/App';
-import Applist from './Componets/App/Applist';
+// import App from './Componets/App/App';
+// import Applist from './Componets/App/Applist';
 // import Filterdata from './Componets/Filltering Data/Filterdata';
 // import Buttonplay from './Componets/Buttonplay/Buttonplay';
 // import Button1 from './Componets/Buttonplay/Button1';
-
+// import Datahook from './Componets/Datahook/Datahook';
+import Hookwork from './Componets/Hookwork/Hookwork.jsx';
 
 // import "jquery"
 // import "@popperjs/core/dist/umd/popper"
@@ -18,11 +19,13 @@ import Applist from './Componets/App/Applist';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Applist/>
-    <App/> 
-    {/* <Filterdata/> */}
+    {/* <Applist/> */}
+    {/* <App/>  */}
+    {/* <Filterdata/>  */}
     {/* <Buttonplay/> */}
     {/* <Button1/> */}
+    {/* <Datahook/> */}
+    <Hookwork/>
   </React.StrictMode>
 );
 
