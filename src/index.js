@@ -8,7 +8,9 @@ import reportWebVitals from './reportWebVitals';
 // import Buttonplay from './Componets/Buttonplay/Buttonplay';
 // import Button1 from './Componets/Buttonplay/Button1';
 // import Datahook from './Componets/Datahook/Datahook';
-import Hookwork from './Componets/Hookwork/Hookwork.jsx';
+// import Hookwork from './Componets/Hookwork/Hookwork.jsx';
+// import Form from './Componets/Form Data/Form';
+import Form1 from './Componets/Form Data/Form1';
 
 // import "jquery"
 // import "@popperjs/core/dist/umd/popper"
@@ -25,7 +27,9 @@ root.render(
     {/* <Buttonplay/> */}
     {/* <Button1/> */}
     {/* <Datahook/> */}
-    <Hookwork/>
+    {/* <Hookwork/> */}
+    {/* <Form/> */}
+    <Form1/>
   </React.StrictMode>
 );
 
