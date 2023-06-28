@@ -1,22 +1,45 @@
 import React from 'react'
+// import Expanceitem from './Componets/Form Data/Expances/Expanceitem'
+import Expences from '../../Componets/Expances/Expences'
 
-const App = ({name,onPlay,onPause}) => {
-  let Playing = false;
-  function hendaleClick(){
-    if(Playing){
-      onPause()
+const App = () => {
+  let expances = [
+    {
+      id:'e1',
+      title:'school Fee',
+      amount:250,
+      date:new Date(2023, 5, 15)
+    },
+    {
+      id:'e2',
+      title:'Books',
+      amount:1000,
+      date:new Date(2023, 5, 15)
+    },
+    {
+      id:'e3',
+      title:'Vacation',
+      amount:500,
+      date:new Date(2023, 5, 15)
+    },
+    {
+      id:'e4',
+      title:'food',
+      amount:700,
+      date:new Date(2023, 5, 15)
     }
-    else{
-      onPlay()
-    }
-    Playing =!Playing;
+  ]
+  
+    return (
+      <>
+        <div>
+          <Expences item={expances}/>
+        </div>
+      </>
+    )
   }
-  return (
-    <div>
-      <button onClick={hendaleClick} className='bg-purple-500 flex justify-center m-auto'>{name}</button>
-      <div id='result' className='w-[400px] m-auto mt-5 border-2 border-black'></div>
-    </div>
-  )
-}
+  
+    
+  export default App
 
-export default App
+    

@@ -10,12 +10,14 @@ import reportWebVitals from './reportWebVitals';
 // import Datahook from './Componets/Datahook/Datahook';
 // import Hookwork from './Componets/Hookwork/Hookwork.jsx';
 // import Form from './Componets/Form Data/Form';
-import Form1 from './Componets/Form Data/Form1';
+// import Form1 from './Componets/Form Data/Form1';
+import Product from './Componets/Table/product';
 
 // import "jquery"
 // import "@popperjs/core/dist/umd/popper"
 // import "bootstrap/dist/js/bootstrap"
 // import "bootstrap/dist/css/bootstrap.css"
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -29,7 +31,8 @@ root.render(
     {/* <Datahook/> */}
     {/* <Hookwork/> */}
     {/* <Form/> */}
-    <Form1/>
+    {/* <Form1/> */}
+    <Product/>
   </React.StrictMode>
 );
 
