@@ -5,10 +5,6 @@ import { useState } from 'react';
 const Product = () => {
     const [nproductdata, setproductdata] = useState(productalias);
 
-    const handleClick = () => {
-        setproductdata([]);
-    }
-
     const handleRemove = (productId) => {
         setproductdata(nproductdata.filter(product => product.id !== productId))
     }
@@ -44,13 +40,13 @@ const Product = () => {
     }
     return (
         <>
-            <div>
-                <form className='flex justify-center border-2'>
-                    <div>
-                        <input type='text' placeholder='Name' value={name} onChange={fname} className='border-2 border-black'/><br/><br/>
-                        <input type='email' placeholder='Email' value={email} onChange={femail} className='border-2 border-black'/><br/><br/>
-                        <input type='text' placeholder='Location' value={location} onChange={fLocation} className='border-2 border-black'/><br/><br/>
-                        <input type='tel' placeholder='Phone' value={phone} onChange={fphone} className='border-2 border-black'/><br/><br/>
+            <div><br/>
+                <form className='flex justify-center border-2 w-[500px] m-auto items-center bg-black'>
+                    <div><br/>
+                        <input type='text' placeholder='Name' value={name} onChange={fname} className='border-2 w-[450PX] border-black px-2' required/><br/><br/>
+                        <input type='email' placeholder='Email' value={email} onChange={femail} className='border-2 border-black w-[450px] px-2' required/><br/><br/>
+                        <input type='text' placeholder='Location' value={location} onChange={fLocation} className='border-2 border-black w-[450px] px-2' required/><br/><br/>
+                        <input type='tel' placeholder='Phone' value={phone} onChange={fphone} className='border-2 border-black w-[450px] px-2' required/><br/><br/>
                     </div> 
                 </form>
             </div>
@@ -98,5 +94,4 @@ const Product = () => {
         </>
     )
 }
-
 export default Product

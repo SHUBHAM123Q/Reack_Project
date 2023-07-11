@@ -11,7 +11,10 @@ import reportWebVitals from './reportWebVitals';
 // import Hookwork from './Componets/Hookwork/Hookwork.jsx';
 // import Form from './Componets/Form Data/Form';
 // import Form1 from './Componets/Form Data/Form1';
-import Product from './Componets/Table/product';
+// import Product from './Componets/Table/product';
+// import Dataeffect from './Componets/Dataeffect/Dataeffect';
+// import Time from './Componets/Time/Time';
+import Cardadd from './Componets/Cardadd/Cardadd';
 
 // import "jquery"
 // import "@popperjs/core/dist/umd/popper"
@@ -32,7 +35,10 @@ root.render(
     {/* <Hookwork/> */}
     {/* <Form/> */}
     {/* <Form1/> */}
-    <Product/>
+    {/* <Product/> */}
+    {/* <Dataeffect/> */}
+    {/* <Time/> */}
+    <Cardadd/>
   </React.StrictMode>
 );
 
