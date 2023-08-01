@@ -8,7 +8,7 @@ const Dataeffect = () => {
 
     const [clicked,setClicked]=useState();
     useEffect(()=>{
-        alert('We Are Use Effect')
+        
     })
   return (
     <div>

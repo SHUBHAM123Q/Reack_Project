@@ -14,7 +14,13 @@ import reportWebVitals from './reportWebVitals';
 // import Product from './Componets/Table/product';
 // import Dataeffect from './Componets/Dataeffect/Dataeffect';
 // import Time from './Componets/Time/Time';
-import Cardadd from './Componets/Cardadd/Cardadd';
+// import Cardadd from './Componets/Cardadd/Cardadd';
+// import Routerex from './Componets/Routerex/Routerex';
+// import Hookmemo from './Componets/Hookmemo/Hookmemo';
+// import Hookmemos from './Componets/Hookmemo/Hookmemos';
+// import Hookmemoss from './Componets/Hookmemo/Hookmemoss';
+// import CallParent from './Componets/UseCallback/CallParent';
+import Calculation from './Componets/Hookmemo/Task/Calculation';
 
 // import "jquery"
 // import "@popperjs/core/dist/umd/popper"
@@ -38,7 +44,13 @@ root.render(
     {/* <Product/> */}
     {/* <Dataeffect/> */}
     {/* <Time/> */}
-    <Cardadd/>
+    {/* <Cardadd/> */}
+    {/* <Routerex/> */}
+    {/* <Hookmemo/> */}
+    {/* <Hookmemos/> */}
+    {/* <Hookmemoss/> */}
+    {/* <CallParent/> */}
+    <Calculation/>
   </React.StrictMode>
 );
 
