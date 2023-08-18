@@ -20,7 +20,13 @@ import reportWebVitals from './reportWebVitals';
 // import Hookmemos from './Componets/Hookmemo/Hookmemos';
 // import Hookmemoss from './Componets/Hookmemo/Hookmemoss';
 // import CallParent from './Componets/UseCallback/CallParent';
-import Calculation from './Componets/Hookmemo/Task/Calculation';
+// import Calculation from './Componets/Hookmemo/Task/Calculation';
+// import Task from './Componets/UseCallback/Task/Task';
+// import Taska1 from './Componets/Task 02-8-2023/Taska1';
+// import Custemhook from './Componets/Custemhook/Custemhook';
+// import UseRef from './Componets/Useref/UseRef';
+// import UseReducer1 from './Componets/UseReducer/UseReducer1';
+import Apps from './Componets/Apps';
 
 // import "jquery"
 // import "@popperjs/core/dist/umd/popper"
@@ -45,12 +51,18 @@ root.render(
     {/* <Dataeffect/> */}
     {/* <Time/> */}
     {/* <Cardadd/> */}
-    {/* <Routerex/> */}
+    {/* <Routerex/>*/}
     {/* <Hookmemo/> */}
     {/* <Hookmemos/> */}
     {/* <Hookmemoss/> */}
     {/* <CallParent/> */}
-    <Calculation/>
+    {/* <Calculation/> */}
+    {/* <Task/> */}
+    {/* <Taska1/> */}
+    {/*<Custemhook/>*/}
+    {/* <UseRef/> */}
+    {/*<UseReducer1/>*/}
+    <Apps/>
   </React.StrictMode>
 );
 

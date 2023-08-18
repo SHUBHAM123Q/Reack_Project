@@ -4,7 +4,7 @@ import { useCallback ,useState} from 'react';
 const CallParent = () => {
 
     const[countone  , setCountone] = useState(0);
-    const[counttwo  , setCounttwo] = useState([]);
+    const[counttwo  , setCounttwo] = useState(0);
 
     const IncrimentOne = () => {
         setCountone(countone+1)
@@ -12,12 +12,12 @@ const CallParent = () => {
 
     const fun =useCallback( () => {
         console.log("Hello Child");
-    }, counttwo)
+    }, [counttwo])
 
   return (
     <div>
         <CallChild  counttwo={counttwo} fun={fun}/>
-        <button onClick={IncrimentOne}>count={countone}</button>
+        <button onClick={fun}>count={countone}</button>
     </div>
   )
 }
