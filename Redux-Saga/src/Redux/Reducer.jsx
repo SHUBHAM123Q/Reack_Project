@@ -1,4 +1,5 @@
-import { ADD_TO_CART, EMPTY_CART } from "./Constant";
+import { ADD_TO_CART} from "./Constant";
+import { EMPTY_CART } from "./Constant";
 import {REMOVE_TO_CART} from "./Constant";
 
 const cartData = (data = [],action) => {

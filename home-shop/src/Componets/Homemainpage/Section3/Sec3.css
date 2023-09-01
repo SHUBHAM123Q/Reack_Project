@@ -1,0 +1,16 @@
+.over{
+    overflow: hidden;
+}
+.ss{
+    transition:0.3s 0s all linear;
+}
+.ss:hover{
+    transform: scale(1.1);
+}
+body{
+    margin: 0;
+}
+.containerrr{
+  max-width: 1120px;
+  margin: auto;
+}

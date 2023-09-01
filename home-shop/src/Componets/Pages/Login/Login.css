@@ -1,0 +1,8 @@
+.email1:focus{
+    outline: 0;
+    border: 0;
+}
+
+.check{
+    appearance: none    ;
+}

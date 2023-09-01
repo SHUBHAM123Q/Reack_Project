@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Syne:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@590&family=Space+Grotesk:wght@700&family=Syne:wght@500&display=swap');
+
+.one{
+    font-family: 'Space Grotesk', sans-serif;
+}
+.join{
+    font-family: 'Space Grotesk', sans-serif;
+}
+.mySwiper{
+    
+}
+.a1{
+    height: 500px;
+    width: 500px;
+    background-color: pink;
+}

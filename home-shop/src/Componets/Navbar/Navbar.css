@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+}
+.containerr{
+    max-width: 1250px;
+    margin: auto;
+}
+.containerrr{
+  max-width: 1120px;
+  margin: auto;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
