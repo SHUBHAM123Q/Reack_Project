@@ -1,12 +1,12 @@
-import { PRODUCT_LIST } from "../Constant";
+import { SET_PRODUCT_LIST } from "../Constant";
 
-const cartData = (data = [], action) => {
+const producData = (data = [], action) => {
      switch (action.type) {
-          case PRODUCT_LIST:
+          case SET_PRODUCT_LIST:
                console.log("PRODUCT_LIST", action);
-               return [action.data];
-          default: return []
+               return [...action.data];
+          default: return data
      }
 }
 
-export default cartData
+export default producData

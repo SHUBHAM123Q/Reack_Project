@@ -4,31 +4,44 @@ import { useSelector } from 'react-redux';
 import { removeTOCart } from '../Redux/Action';
 import { emptyCart } from '../Redux/Action';
 import { productlist } from '../Redux/Product/ProductAction';
-import Header from './Header';
+import { useEffect } from 'react';
 
-function Main() {
+import a1 from '../../../';
 
+const Main = () => {
 
-
-    const data = useSelector(state => state)
+    const data = useSelector(state => state.productData)
+    const dispatch = useDispatch();
     console.log("Main Componets", data);
 
-    const dispatch = useDispatch();
-    const product = {
-        name: "iphone",
-        type: "Mobile",
-        price: 20000,
-        color: "red"
-    }
+    useEffect(() => {
+        dispatch(productlist())
+    }, [dispatch])
 
     return (
         <div>
-            <Header />
-            <button onClick={() => dispatch(addToCart(product))} class="bg-blue-500 hover:bg-blue-700 ms-5 text-white font-bold py-2   px-4 rounded">Add Iteam</button>
-            <button onClick={() => dispatch(removeTOCart(product))} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 ms-5  px-4 rounded">Add Remove</button>
-            <button onClick={() => dispatch(emptyCart(product))} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 ms-5  px-4 rounded">Empty Cart</button>
-            <button onClick={() =>dispatch(productlist(product))} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 ms-5  px-4 rounded">Product List</button>
-
+            <div className='flex flex-wrap'>
+            <h1><img src={a1}/></h1>
+                {
+                    data.map((item) =>
+                        <div key={item.id} className='border-black border-2 p-2 h-auto ms-5 mt-5'>
+                        <img src={item.img} />
+                        <h1>Title:{item.title}</h1>
+                            <h1>Name:{item.type}</h1>
+                            <h1>Brand:{item.brand}</h1>
+                            <h1>Price:{item.price}</h1>
+                            <div>
+                                <button className='border-2 border-black mt-2' onClick={() => dispatch(addToCart(item))}>ADD_TO_CART</button>
+                            </div>
+                            <div>
+                                <button className='border-2 border-black mt-2' onClick={() => dispatch(removeTOCart(item.id))}>REMOVE_TO_CART</button>
+                            </div>
+                        </div>
+                    )
+                }
+            </div>
+            <button onClick={() => dispatch(emptyCart())} className="bg-blue-500 hover:bg-blue-700 ms-5 text-white font-bold py-2 mt-5  px-4 rounded">Empty Cart</button>
+            <button onClick={() => dispatch(productlist())} className="bg-blue-500 hover:bg-blue-700 ms-5 text-white font-bold py-2 mt-5  px-4 rounded">Product_List</button>
         </div>
     );
 }

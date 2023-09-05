@@ -1,11 +1,11 @@
-import {takeEvery} from 'redux-saga/effects'
-import { PRODUCT_LIST } from '../Constant';
+import {takeEvery , put} from 'redux-saga/effects'
+import { PRODUCT_LIST , SET_PRODUCT_LIST} from '../Constant';
 
 function* getProducts(){
-     console.log("call api here");
-     let data = yield fetch('http://localhost:3004/products');
+     let data = yield fetch(' http://localhost:3004/posts');
      data = yield data.json()
      console.warn("action called" , data);
+     yield put({type:SET_PRODUCT_LIST,data})
 }
 
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
+import {Link} from 'react-router-dom';
 
 const Header = () => {
   const result = useSelector(state => state.cartData)
@@ -8,9 +9,9 @@ const Header = () => {
     <>
 
       <div className='h-[100px] w-full bg-yellow-300 p-5'>
-        <div>
-          <i class="fa-solid fa-cart-shopping text-[50px] z-10 relative"></i>
-        </div>
+        <Link to='/Cart'>
+          <i className="fa-solid fa-cart-shopping text-[50px] z-10 relative"></i>
+        </Link>
       </div>
 
       <div className='mt-[20px] ms-[20px]'>
