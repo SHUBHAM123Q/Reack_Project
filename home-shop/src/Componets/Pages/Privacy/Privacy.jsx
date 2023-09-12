@@ -3,8 +3,8 @@ import './Privacy.css';
 const Privacy = () => {
   return (
     <>
-      <div className='shyam xl:mt-[80px] sm:h-[550px] md:h-[550px] lg:h-[550px] xl:h-[600px] 2xl:h-[600px]'>
-        <p className='text-center font-[Space Grotesk] font-bold sm:pt-[150px] xl:pt-[70px] sm:text-[50px] xl:text-[70px]'>Privacy Policy</p>
+      <div className='shyam xl:mt-[80px] xs:h-[500px] xs:mt-[80px] sm:h-[550px] md:h-[550px] lg:h-[550px] xl:h-[600px] 2xl:h-[600px]'>
+        <p className='text-center font-[Space Grotesk] font-bold sm:pt-[150px] xl:pt-[70px] xs:text-[40px] sm:text-[50px] xl:text-[70px]'>Privacy Policy</p>
         <p className='text-center text-slate-500 sm:text-[17px] sm:pt-[20px] sm:max-w-[500px] sm:m-auto md:text-[17px] md:max-w-[630px] lg:max-w-[590px] xl:max-w-[660px] xl:text-[18px] xl:pt-[15px]'>Your privacy is important to us. It is Harry’s policy to respect your privacy regarding
           any information we may collect from you across our website, https:// Harry.com,
           and other sites we own and operate.</p>

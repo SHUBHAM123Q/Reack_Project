@@ -7,7 +7,7 @@ const Mycart = () => {
         <div className='mt-20'>
             <div className='h-[300px] bg-[#f1f1f1] flex justify-center items-center'>
                 <div className=''>
-                    <p className='text-[70px] text-[#03041c] font-bold mycart'>My Cart</p>
+                    <p className='xs:text-[50px] sm:text-[70px] text-[#03041c] font-bold mycart'>My Cart</p>
                     <a href='#'><p className='text-center text-black'>Home<span className='ms-3'>Cart</span></p></a>
                 </div>
             </div>
