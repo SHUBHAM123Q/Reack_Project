@@ -6,7 +6,6 @@ import { emptyCart } from '../Redux/Action';
 import { productlist } from '../Redux/Product/ProductAction';
 import { useEffect } from 'react';
 
-import a1 from '../../../';
 
 const Main = () => {
 
@@ -21,7 +20,6 @@ const Main = () => {
     return (
         <div>
             <div className='flex flex-wrap'>
-            <h1><img src={a1}/></h1>
                 {
                     data.map((item) =>
                         <div key={item.id} className='border-black border-2 p-2 h-auto ms-5 mt-5'>

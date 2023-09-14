@@ -1,9 +1,9 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
+import {useSelector} from "react-redux";
 import {Link} from 'react-router-dom';
 
 const Header = () => {
-  const result = useSelector(state => state.cartData)
+  const result = useSelector((state) => state.cartData)
   console.log("redux data in", result);
   return (
     <>

@@ -1,3 +1,92 @@
+.one{
+    margin-top: 30px;
+}
+
+.card{
+    width: 255px;
+    height: 300px;
+    padding: 2rem , 1rem;
+    /* background : palevioletred; */
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s all;
+}
+
+.card:hover:before{
+    opacity: 1;
+}
+
+.card img{
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .info{
+    color: black;
+    transform: translateX(50px);
+    transition: 0.5s all;
+}
+
+.card:hover .info{
+    transform: translateY(0px);
+}
+
+.card .info1{
+    color: black;
+    transform: translateY(50px);
+    transition: 0.5s all;
+}
+.card:hover .info1{
+    transform: translateX(0px);
+}
+
+.one1{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin-top: -260px;
+    margin-left: 208px;
+}
+
+.one2{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 208px;
+}
+
+.one3{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 208px;
+}
+
+
+.ss{
+    transition:0.3s 0s all linear;
+}
+.ss:hover{
+    transform: scale(1.1);
+}
+
 .over{
     overflow: hidden;
 }
@@ -13,4 +102,7 @@ body{
 .containerrr{
   max-width: 1120px;
   margin: auto;
+}
+#Sec3:focus{
+    color: #f50986;
 }

@@ -19,12 +19,15 @@ import Checkout from './Componets/Pages/Checkout/Checkout';
 import TopRated from './Componets/Homemainpage/Section3/TopRated';
 import BestSelling from './Componets/Homemainpage/Section3/BestSelling';
 import LatestProduct from './Componets/Homemainpage/Section3/LatestProduct';
+import { Provider } from 'react-redux';
+import store from "./React Saga/Store"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-  <BrowserRouter>
-  <Navbar/>
-  <Routes>
+   <Provider store={store}>
+   <BrowserRouter>
+   <Navbar/>
+   <Routes>
       <Route path="/" element={<Homemainpage/>}>
          <Route path="/" element={<TopRated/>}></Route>
          <Route path="Selling" element={<BestSelling/>}></Route>
@@ -44,4 +47,5 @@ root.render(
    </Routes>
    <Fotter/>
    </BrowserRouter>
+   </Provider>
 );

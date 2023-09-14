@@ -1,0 +1,67 @@
+[
+    {
+        "id":1,
+        "Buy":"Buy Guild Planer - 900w",
+        "Price":239.00
+    },
+    {
+        "id":2,
+        "Buy":"Apple Watch Series 8",
+        "Price":188
+    },
+    {
+        "id":3,
+        "Buy":"TECLAST Tablet Protective Cover Case",
+        "Price":899.00,
+        "Price1":791.12
+    },
+    {
+        "id":4,
+        "Buy":"Bluefin Fitness Unisex Adult Tour",
+        "Price":996.00
+    },
+    {
+        "id":5,
+        "Buy":"E68 Wireless Headphone Bluetooth",
+        "Price":114.00
+    },
+    {
+        "id":6,
+        "Buy":"ViewSonic Professional Monitor",
+        "Price":299.00,
+        "Price1":281.06
+    },
+    {
+        "id":7,
+        "Buy":"Xiaomi Poco M4 pro 5G",
+        "Price":67.00
+    },
+    {
+        "id":8,
+        "Buy":"VR Virtual Reality Headset",
+        "Price":137.00,
+        "Price1":123.30
+    },
+    {
+        "id":9,
+        "Buy":"Tempo Sphera Spinning Reel",
+        "Price":799.00,
+        "Price1":679.15
+    },
+    {
+        "id":10,
+        "Buy":"Stariver Electric Kettle",
+        "Price":59.00
+    },
+    {
+        "id":11,
+        "Buy":"Braun Series Electric Shaver Clean",
+        "Price":299.00,
+        "Price1":263.12
+    },
+    {
+        "id":12,
+        "Buy":"STANLEY STPP7502 750W 2mm Planer",
+        "Price":356.00
+    }
+]

@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": 1,
-      "img": "../asset/img-1.jpeg",
+      "img": "../asset/img1.jpeg",
       "title": "Iphone",
       "type": "Iphone 14 pro max",
       "price": 135000,

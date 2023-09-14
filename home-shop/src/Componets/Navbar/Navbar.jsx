@@ -6,8 +6,11 @@ import aset_90 from "../../assets/asset90.svg"
 import aset_91 from "../../assets/asset91.svg"
 import aset_92 from "../../assets/asset 92.svg"
 import aset_93 from "../../assets/asset 93.svg"
+import {useSelector} from "react-redux";
 
 const Navbar = () => {
+  let Data = useSelector((state => state.cartData))
+
     return (
       <>
         <div className="bg-[#f0f2ee] h-[80px]  border-[1px] border-gray-300  border-t-0 border-r-0 border-l-0 navbar">
@@ -68,9 +71,12 @@ const Navbar = () => {
                     </a>
                     <a href="#">
                       <img src={aset_92} alt="" />
+                      <p className='h-[18px] w-[18px] absolute ms-[11px] mt-[-25px]  text-center bg-red-400  rounded-full z-20'>1</p>
                     </a>
                     <a href="#">
                       <img src={aset_93} alt="" />
+                      <p className='h-[18px] w-[18px] absolute ms-[11px] mt-[-25px]  text-center bg-red-400  rounded-full z-20'>{Data.length}</p>
+
                     </a>
                   </div>
                 </ul>
