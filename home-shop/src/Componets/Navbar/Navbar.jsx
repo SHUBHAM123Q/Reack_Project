@@ -73,11 +73,11 @@ const Navbar = () => {
                       <img src={aset_92} alt="" />
                       <p className='h-[18px] w-[18px] absolute ms-[11px] mt-[-25px]  text-center bg-red-400  rounded-full z-20'>1</p>
                     </a>
-                    <a href="#">
-                      <img src={aset_93} alt="" />
+                    <Link to='/Mycart'>
+                    <img src={aset_93} alt="" />
                       <p className='h-[18px] w-[18px] absolute ms-[11px] mt-[-25px]  text-center bg-red-400  rounded-full z-20'>{Data.length}</p>
-
-                    </a>
+                      </Link>
+                    
                   </div>
                 </ul>
               </nav>
