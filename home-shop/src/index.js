@@ -5,6 +5,7 @@ import './index.css';
 import Navbar from './Componets/Navbar/Navbar';
 import Homemainpage from './Componets/Homemainpage/Homemainpage';
 import Aboutpage from './Componets/Aboutpage/Aboutpage';
+import Shop from './Componets/Shop/Shop';
 import Contactus from './Componets/Contactus/Contactus';
 import Login from './Componets/Pages/Login/Login';
 import Privacy from './Componets/Pages/Privacy/Privacy';
@@ -34,6 +35,7 @@ root.render(
          <Route path="Latest" element={<LatestProduct/>}></Route>
       </Route>
       <Route path="/About" element={<Aboutpage/>}></Route>
+      <Route path='/Shop' element={<Shop/>}></Route>
       <Route path="/Contactus" element={<Contactus/>}></Route>
       <Route path="/Login" element={<Login/>}></Route>
       <Route path="/Privacy" element={<Privacy/>}></Route>

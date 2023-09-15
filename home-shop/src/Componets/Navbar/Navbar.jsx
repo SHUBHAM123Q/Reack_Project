@@ -33,8 +33,8 @@ const Navbar = () => {
                     </div>
   
                     <div>
-                      <a className="text-[525258] text-[15px] hover:text-red-600 "
-                        style={{ fontFamily: "sans-serif" }} to="/Shop">Shop</a>
+                      <Link className="text-[525258] text-[15px] hover:text-red-600 "
+                        style={{ fontFamily: "sans-serif" }} to="/Shop">Shop</Link>
                     </div>
   
                     <div className="dropdown inline-block relative">

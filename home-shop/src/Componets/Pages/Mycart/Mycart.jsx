@@ -2,13 +2,13 @@ import React from 'react'
 import './Mycart.css'; 
 import emptycart from '../../../assets/emptycart.png'
 import { useSelector, useDispatch } from 'react-redux'
-import { removeToCart } from '../../../React Saga/Action'		
+import { decriment_qty, incriment_qty, removeToCart } from '../../../React Saga/Action'		
 import aset_11 from "../../../Componets/../assets/asset3.png"
 
 const Mycart = () => {
     let dispatch = useDispatch()
     let cartData = useSelector((state) => state.cartData)
-    let cartPrice = cartData.length && cartData.map((item) => item.Price).reduce((pre, next) => pre + next)
+    let cartPrice = cartData.length && cartData.map((item) => item.Price2).reduce((pre, next) => pre + next)
   return (
    <>
         <div className='mt-20'>
@@ -25,7 +25,7 @@ const Mycart = () => {
             <button className='shop flex m-auto hover:bg-black hover:text-white mt-2 px-6 py-2 bg-[#f1f1f1]'>Go To Shop</button>
         </div>
 
-        <table className='table-auto w-11/12 xl:w-9/12 mx-auto mt-12 text-lg '>
+        <table className='w-11/12 xl:w-9/12 mx-auto mt-12 text-lg  table-fixed'>
                 <thead>
                     <tr className='border'>
                         <th className='border p-5'>Images</th>
@@ -45,11 +45,11 @@ const Mycart = () => {
                                 <td className='border'>${item.Buy}</td>
                                 <td className='border'>${item.Price}</td>
                                 <td className='flex justify-center items-center mt-10 gap-5'>
-                                    <button className='border px-3 py-1'>-</button>
-                                    <p className=''>1</p>
-                                    <button className='border px-3 py-1'>+</button>
+                                    <button onClick={() => dispatch(decriment_qty(item.id))} className='border px-3 py-1'>-</button>
+                                    <p className=''>{item.quntity}</p>
+                                    <button onClick={() => dispatch(incriment_qty(item.id))} className='border px-3 py-1'>+</button>
                                 </td>
-                                <td className='border'>${item.Price}</td>
+                                <td className='border'>${item.Price2}</td>
                                 <td className='border'><button onClick={() => dispatch(removeToCart(item.id))}>x</button></td>
                             </tr>
                         )

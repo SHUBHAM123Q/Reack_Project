@@ -1,5 +1,5 @@
 import React from 'react'
-import topratedd from "./toproted.json"
+// import topratedd from "./toproted.json"
 import '../Section3/Sec3.css';
 import aset_11 from "../../../assets/asset11.jpeg"
 import aset_17 from "../../../assets/asset17.jpeg"
@@ -29,7 +29,7 @@ const TopRated = () => {
         <>
             <div className='containerrr h-auto flex justify-between flex-wrap'>
                 {
-                    topratedd.map(topratedd => {
+                    data.map(topratedd => {
                         return (
                             <div class="one">
                                 <div class="card h-[300px] w-[260px]">
