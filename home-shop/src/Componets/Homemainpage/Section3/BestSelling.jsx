@@ -1,93 +1,69 @@
 import React from 'react'
+// import topratedd from "./toproted.json"
 import '../Section3/Sec3.css';
-
-import product_17 from "../../../assets/product-17.jpg"
-import product_20 from "../../../assets/product-20.jpg"
-import product_14 from "../../../assets/product-14.jpg"
-import product_16 from "../../../assets/product-16.jpg"
-import product_13 from "../../../assets/product-13.jpg"
-import product_19 from "../../../assets/product-19.jpg"
-import product_15 from "../../../assets/product-15.jpg"
-import product_18 from "../../../assets/product-18.jpg"
-
+import aset_11 from "../../../assets/asset11.jpeg"
+import aset_17 from "../../../assets/asset17.jpeg"
+import { useDispatch , useSelector } from 'react-redux';
+import {productList} from "../../../React Saga/Product/Productlist"
+import { useEffect } from 'react';
+import {addToCart} from "../../../React Saga/Action"
+// import aset_23 from "../../../assets/asset23.jpeg"
+// import aset_29 from "../../../assets/asset29.jpeg"
+// import aset_35 from "../../../assets/asset35.jpeg"
+// import aset_41 from "../../../assets/asset41.jpeg"
+// import aset_47 from "../../../assets/asset47.jpeg"
+// import aset_53 from "../../../assets/asset53.jpeg"
+// import aset_59 from "../../../assets/asset59.jpeg"
+// import aset_65 from "../../../assets/asset65.jpeg"
+// import aset_75 from "../../../assets/asset75.jpeg"
+// import aset_77 from "../../../assets/asset77.jpeg"
 const BestSelling = () => {
-  return (
-    <>
+    let dispatch = useDispatch();
+    let data = useSelector((state)=> state.productData)
 
-      <div className="containerrr">
+    useEffect(()=>{
+        dispatch(productList())
+    },[])
 
-        <div className="flex justify-between mt-[30px]">
-          <div className=''>
-            <div className="over h-[300px] bg-[#f6f8fa] w-[270px]" >
-              <a href="#"><img src={product_17} alt="" className="ss m-auto" /></a>
+    return (
+        <>
+            <div className='containerrr h-auto flex justify-between flex-wrap'>
+                {
+                    data.filter((el) => {return el.type === 'best selling'}).map(topratedd => {
+                        return (
+                            <div class="one">
+                                <div class="card h-[300px] w-[260px]">
+                                    <img src={aset_11} alt="Not Show" class="ss cursor-pointer" style={{ height: "300px" }} />
+                                    <div class="info">
+                                        <div class="one1 hover:bg-[#f50963]">
+                                            <a href='#'>
+                                                <img src={aset_17} alt='Not Show' />
+                                            </a>
+                                        </div>
+                                        <div class="one2 hover:bg-[#f50963]">
+                                            <a href='#'>
+                                                <img src={aset_17} alt='Not Show' />
+                                            </a>
+                                        </div>
+                                        <div class="one3 hover:bg-[#f50963]">
+                                            <a href='#'>
+                                                <img src={aset_17} alt='Not Show' />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="info1">
+                                        <button  onClick={()=>dispatch(addToCart(topratedd))}  class="w-[255px] h-[35px] bg-black text-white mt-[83px] ml-[-250px] hover:bg-[#f50963]">ADD TO CART</button>
+                                    </div>
+                                </div>
+                                <p className="text-[15px] mt-2">{topratedd.Buy}</p>
+                                <p className="text-gray-700 mt-1"><del>{topratedd.Price1}</del>{topratedd.Price}</p>
+                            </div>
+                        )
+                    })
+                }
             </div>
-            <p className="text-[15px] mt-2 ">Buy Guild Planer - 900w</p>
-            <p className="text-gray-700 mt-1">$239.00</p>
-          </div>
-          <div className>
-            <div className="over h-[300px] bg-[#f6f8fa] w-[270px]">
-              <a href="#">
-                <img src={product_20} alt="" className="ss m-auto" />
-              </a>
-            </div>
-            <p className="text-[15px] mt-2">Apple Watch Series 8</p>
-            <p className="text-gray-700 mt-1">$188.00</p>
-          </div>
-          <div className>
-            <div className="over h-[300px] bg-[#f6f8fa] w-[270px]">
-              <a href="#" />
-              <img src={product_14} alt="" className="ss m-auto" />
-            </div>
-            <p className="text-[15px] mt-2">TECLAST Tablet Protective Cover Case</p>
-            <p className="text-gray-700 mt-1"><del className="me-1">$899.00</del>$791.12</p>
-          </div>
-          <div className>
-            <div className="over h-[300px] bg-[#f6f8fa] w-[270px]">
-              <a href="#" />
-              <img src={product_16} alt="" className="ss m-auto" />
-            </div>
-            <p className="text-[15px] mt-2">Bluefin Fitness Unisex Adult Tour</p>
-            <p className="text-gray-700 mt-1">$996.00</p>
-          </div>
-        </div>
-
-        <div className="flex justify-between mt-[30px]">
-          <div className>
-            <div className="over h-[300px] bg-[#f6f8fa] w-[270px]" >
-              <a href="#"><img src={product_13} alt="" className="ss m-auto" /></a>
-            </div>
-            <p className="text-[15px] mt-2">Buy Guild Planer - 900w</p>
-            <p className="text-gray-700 mt-1">$239.00</p>
-          </div>
-          <div className>
-            <div className="over h-[300px] bg-[#f6f8fa] w-[270px]">
-              <a href="#">
-                <img src={product_19} alt="" className="ss m-auto" />
-              </a>
-            </div>
-            <p className="text-[15px] mt-2">Apple Watch Series 8</p>
-            <p className="text-gray-700 mt-1">$188.00</p>
-          </div>
-          <div className>
-            <div className="over h-[300px] bg-[#f6f8fa] w-[270px]">
-              <a href="#" />
-              <img src={product_15} alt="" className="animate__animated animate__bounce ss m-auto" />
-            </div>
-            <p className="text-[15px] mt-2">TECLAST Tablet Protective Cover Case</p>
-            <p className="text-gray-700 mt-1"><del className="me-1">$899.00</del>$791.12</p>
-          </div>
-          <div className>
-            <div className="over h-[300px] bg-[#f6f8fa] w-[270px]">
-              <a href="#" />
-              <img src={product_18} alt="" className="ss m-auto" />
-            </div>
-            <p className="text-[15px] mt-2">Bluefin Fitness Unisex Adult Tour</p>
-            <p className="text-gray-700 mt-1">$996.00</p>
-          </div>
-        </div>
-      </div>
-    </>
-  )
+        </>
+    )
 }
 
 export default BestSelling

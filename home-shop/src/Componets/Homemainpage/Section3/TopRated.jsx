@@ -1,7 +1,7 @@
 import React from 'react'
 // import topratedd from "./toproted.json"
 import '../Section3/Sec3.css';
-import aset_11 from "../../../assets/asset11.jpeg"
+// import aset_11 from "../../../assets/asset11.jpeg"
 import aset_17 from "../../../assets/asset17.jpeg"
 import { useDispatch , useSelector } from 'react-redux';
 import {productList} from "../../../React Saga/Product/Productlist"
@@ -29,11 +29,11 @@ const TopRated = () => {
         <>
             <div className='containerrr h-auto flex justify-between flex-wrap'>
                 {
-                    data.map(topratedd => {
+                    data.filter((el) => {return el.type === 'top rated'}).map(topratedd => {
                         return (
                             <div class="one">
                                 <div class="card h-[300px] w-[260px]">
-                                    <img src={aset_11} alt="Not Show" class="ss cursor-pointer" style={{ height: "300px" }} />
+                                    <img src={topratedd.image} alt="Not Show" class="ss cursor-pointer" style={{ height: "300px" }} />
                                     <div class="info">
                                         <div class="one1 hover:bg-[#f50963]">
                                             <a href='#'>
@@ -56,7 +56,7 @@ const TopRated = () => {
                                     </div>
                                 </div>
                                 <p className="text-[15px] mt-2">{topratedd.Buy}</p>
-                                <p className="text-gray-700 mt-1"><del>{topratedd.Price1}</del>{topratedd.Price}</p>
+                                <p className="text-gray-700 mt-1"><del>{topratedd.Delprice}</del> {topratedd.Price}</p>
                             </div>
                         )
                     })

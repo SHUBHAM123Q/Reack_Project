@@ -1,88 +1,296 @@
 [
     {
-        "id":1,
-        "Buy":"Buy Guild Planer - 900w",
-        "Price":239.00,
-        "Price2":239.00,
-        "quntity":1
+        "id": 1,
+        "image": "../../../assets/asset11.jpeg",
+        "Name": "Apple Watch Series 8",
+        "Price": 188.00,
+        "price2": 188.00,
+        "quntity": 1,
+        "type": "top rated",
+        "categaty": "watch"
     },
     {
-        "id":2,
-        "Buy":"Apple Watch Series 8",
-        "Price":188,
-        "quntity":1,
-        "Price2":188
+        "id": 2,
+        "image": "../../../assets/asset 23.jpeg",
+        "Name": "TECLAST Tablet Protective Cover Case",
+        "Sal": "sale",
+        "quntity": 1,
+        "Pr": "-12%",
+        "Delprice": "$899.00",
+        "Price": 791.12,
+        "price2": 791.12,
+        "type": "top rated",
+        "categaty": "tablet"
     },
     {
-        "id":3,
-        "Buy":"TECLAST Tablet Protective Cover Case",
-        "Price1":899.00,
-        "quntity":1,
-        "Price":791.12,
-        "Price2":791.12
-
+        "id": 3,
+        "image": "../../../assets/asset 43.jpeg",
+        "Name": "View Professional Moniter",
+        "Sal": "sale",
+        "quntity": 1,
+        "Pr": "-6%",
+        "Delprice": "$299.00",
+        "Price": 281.06,
+        "price2": 281.06,
+        "type": "top rated",
+        "categaty": "moniter"
     },
     {
-        "id":4,
-        "Buy":"Bluefin Fitness Unisex Adult Tour",
-        "Price":996.00,
-        "Price2":996.00,
-        "quntity":1
+        "id": 4,
+        "image": "../../../assets/asset 11.jpeg",
+        "Name": "Buy Guild Planer - 900w",
+        "Price": 239.00,
+        "price2": 239.00,
+        "quntity": 1,
+        "type": "top rated",
+        "categaty": "planner"
     },
     {
-        "id":5,
-        "Buy":"E68 Wireless Headphone Bluetooth",
-        "Price":114.00,
-        "quntity":1
+        "id": 5,
+        "image": "../../../assets/asset 47.jpeg",
+        "Name": "Xiaomi Poco M4 pro 5G",
+        "Price": 67.00,
+        "price2": 67.00,
+        "quntity": 1,
+        "type": "top rated",
+        "categaty": "phone"
     },
     {
-        "id":6,
-        "Buy":"ViewSonic Professional Monitor",
-        "Price":299.00,
-        "Price1":281.06,
-        "Price2":299.00
-
+        "id": 6,
+        "image": "../../../assets/asset 59.jpeg",
+        "Name": "Tempo Sphera Spinning Reel",
+        "Sal": "sale",
+        "quntity": 1,
+        "Pr": "-15%",
+        "Delprice": "$799.00",
+        "Price": 679.15,
+        "price2": 679.15,
+        "type": "top rated",
+        "categaty": "spinning reel"
     },
     {
-        "id":7,
-        "Buy":"Xiaomi Poco M4 pro 5G",
-        "Price":67.00,
-        "quntity":1
+        "id": 7,
+        "image": "../../../assets/asset 35.jpeg",
+        "Name": "E68 Wireless Headphone Bluetooth",
+        "Price": 114.00,
+        "price2": 114.00,
+        "quntity": 1,
+        "type": "top rated",
+        "categaty": "bluetooth"
     },
     {
-        "id":8,
-        "Buy":"VR Virtual Reality Headset",
-        "Price":137.00,
-        "Price2":137.00,
-        "Price1":123.30
+        "id": 8,
+        "image": "../../../assets/asset 9.jpeg",
+        "Name": "VR Virtual Reality Headset",
+        "Sal": "sale",
+        "quntity": 1,
+        "Pr": "-10%",
+        "Delprice": "$137.00",
+        "price2": 123.30,
+        "Price": 123.30,
+        "type": "top rated",
+        "categaty": "virtual"
     },
     {
-        "id":9,
-        "Buy":"Tempo Sphera Spinning Reel",
-        "Price":799.00,
-        "Price2":799.00,
-        "Price1":679.15,
-        "quntity":1
+        "id": 9,
+        "image": "../../../assets/asset 71.jpeg",
+        "Name": "Braun Series Electric Shaver Clean",
+        "Sal": "sale",
+        "quntity": 1,
+        "Pr": "-12%",
+        "Delprice": "$299.00",
+        "Price": 263.12,
+        "price2": 263.12 ,
+        "type": "top rated",
+        "categaty": "shaver clean"
     },
     {
-        "id":10,
-        "Buy":"Stariver Electric Kettle",
-        "Price":59.00,
-        "Price2":59.00,
-        "quntity":1
+        "id": 10,
+        "image": "../../../assets/asset 65.jpeg",
+        "Name": "Stariver Electric Kettle",
+        "Price": 59.00,
+        "price2": 59.00,
+        "quntity": 1,
+        "type": "top rated",
+        "categaty": "kettle"
     },
     {
-        "id":11,
-        "Buy":"Braun Series Electric Shaver Clean",
-        "Price":299.00,
-        "Price2":299.00,
-        "Price1":263.12
+        "id": 11,
+        "image": "../../../assets/asset 5.jpeg",
+        "Name": "Bluefin Fitness Unisex Adult Tour",
+        "Price": 996.00,
+        "price2": 996.00,
+        "quntity": 1,
+        "type": "top rated",
+        "categaty": "exercise-bike"
     },
     {
-        "id":12,
-        "Buy":"STANLEY STPP7502 750W 2mm Planer",
-        "Price":356.00,
-        "Price2":356.00,
-        "quntity":1
+        "id": 12,
+        "image": "../../../assets/asset 77.jpeg",
+        "Name": "STANLEY STPP7502 750W 2mm Planer",
+        "Price": 356.00,
+        "price2": 356.00,
+        "quntity": 1,
+        "type": "top rated",
+        "categaty": "planner"
+    },
+    {
+        "id": 13,
+        "image": "../../../assets2/asset 11.jpeg",
+        "Name": "Microsoft's Surface Hub 2S",
+        "Sal": "sale",
+        "quntity": 1,
+        "Pr": "-3%",
+        "Delprice": "$799.00",
+        "Price": 775.03,
+        "price2": 775.03,
+        "type": "best selling",
+        "categaty": "moniter"
+    },
+    {
+        "id": 14,
+        "image": "../../../assets2/asset 12.jpeg",
+        "Name": "Dualshock Wirless Control",
+        "Price": 79.00,
+        "price2": 79.00,
+        "quntity": 1,
+        "type": "best selling",
+        "categaty": "wireless"
+    },
+    {
+        "id": 15,
+        "image": "../../../assets2/asset 13.jpeg",
+        "Name": "Apple iphone 13 Pro Max",
+        "Price": 1660.00,
+        "price2": 1660.00,
+        "quntity": 1,
+        "type": "best selling",
+        "categaty": "phone"
+    },
+    {
+        "id": 16,
+        "image": "../../../assets2/asset 14.jpeg",
+        "Name": "Apple ipad mini",
+        "Price": 887.00,
+        "price2": 887.00,
+        "quntity": 1,
+        "type": "best selling",
+        "categaty": "ipad"
+    },
+    {
+        "id": 17,
+        "image": "../../../assets2/asset 15.jpeg",
+        "Name": "Apple iphone 14 Pro Max",
+        "Sal": "sale",
+        "quntity": 1,
+        "Pr": "-10%",
+        "Delprice": "$1860.65",
+        "Price": 1674.59,
+        "price2": 1674.59 ,
+        "type": "best selling",
+        "categaty": "phone"
+    },
+    {
+        "id": 18,
+        "image": "../../../assets2/asset 16.jpeg",
+        "Name": "Sennheiser Sport True Wireless Earbuds",
+        "Price": 169.00,
+        "price2": 169.00,
+        "quntity": 1,
+        "type": "best selling",
+        "categaty": "wireless"
+    },
+    {
+        "id": 19,
+        "image": "../../../assets2/asset 17.jpeg",
+        "Name": "Hious Case For Lenovo Yoga Tab 13",
+        "Price": 779.00,
+        "price2": 779.00,
+        "quntity": 1,
+        "type": "best selling",
+        "categaty": "tablet"
+    },
+    {
+        "id": 20,
+        "image": "../../../assets2/asset 18.jpeg",
+        "Name": "Interactive Whiteboard Microsoft Surface Hub",
+        "Price": 688.00,
+        "price2": 688.00,
+        "quntity": 1,
+        "type": "best selling",
+        "categaty": "moniter"
+    },
+    {
+        "id": 21,
+        "image": "../../../assets3/asset 11.jpeg",
+        "Name": "Bluetooth speaker with light",
+        "Price": 89.00,
+        "price2": 89.00,
+        "quntity": 1,
+        "type": "latest product",
+        "categaty": "bluetooth"
+    },
+    {
+        "id": 22,
+        "image": "../../../assets3/asset 12.jpeg",
+        "Name": "HP Reverb G2 VR Headset",
+        "Price": 999.00,
+        "price2": 999.00,
+        "quntity": 1,
+        "type": "latest product",
+        "categaty": "headset"
+    },
+    {
+        "id": 23,
+        "image": "../../../assets3/asset 13.jpeg",
+        "Name": "Cougar Gaming Case (Conquer)",
+        "Sal": "sale",
+        "quntity": 1,
+        "Pr": "-15%",
+        "Delprice": "$599.00",
+        "Price": 509.15,
+        "price2": 509.15,
+        "type": "latest product",
+        "categaty": "computer"
+    },
+    {
+        "id": 24,
+        "image": "../../../assets3/asset 14.jpeg",
+        "Name": "Wireless Rechargeable Bettery Powered Camera",
+        "Price": 56.00,
+        "price2": 56.00,
+        "quntity": 1,
+        "type": "latest product",
+        "categaty": "camera"
+    },
+    {
+        "id": 25,
+        "image": "../../../assets3/asset 15.jpeg",
+        "Name": "New Beats Studio Buds",
+        "Price": 100.00,
+        "price2": 100.00,
+        "quntity": 1,
+        "type": "latest product",
+        "categaty": "bluetooth"
+    },
+    {
+        "id": 26,
+        "image": "../../../assets3/asset 16.jpeg",
+        "Name": "Polaroid Go and Camera Case Bundle",
+        "Price": 35.00,
+        "price2": 35.00,
+        "quntity": 1,
+        "type": "latest product",
+        "categaty": "camera"
+    },
+    {
+        "id": 27,
+        "image": "../../../assets3/asset 17.jpeg",
+        "Name": "Alarm Clock for Kids",
+        "Price": 58.00,
+        "price2": 58.00,
+        "quntity": 1,
+        "type": "latest product",
+        "categaty": "watch"
     }
 ]
