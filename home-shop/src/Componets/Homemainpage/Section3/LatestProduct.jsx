@@ -27,13 +27,13 @@ const BestSelling = () => {
 
     return (
         <>
-            <div className='containerrr h-auto flex justify-between flex-wrap'>
+            <div className='containerrr flex flex-wrap mx-auto gap-x-[26px] '>
                 {
                     data.filter((el) => {return el.type === 'latest product'}).map(topratedd => {
                         return (
-                            <div class="one">
-                                <div class="card h-[300px] w-[260px]">
-                                    <img src={aset_11} alt="Not Show" class="ss cursor-pointer" style={{ height: "300px" }} />
+                            <div class="one  inline-block w-[260px] ">
+                                <div class="card h-[300px] ">
+                                    <img src={topratedd.image} alt="Not Show" class="ss cursor-pointer " style={{ height: "300px" }} />
                                     <div class="info">
                                         <div class="one1 hover:bg-[#f50963]">
                                             <a href='#'>

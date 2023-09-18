@@ -13,7 +13,7 @@ let cartData = (data = [], action) => {
             let incrimentiyem = data.filter((item) => {
                 if(item.id === action.data){
                     let quntity = item.quntity+=1;
-                    let price = item.Price2+=item.Price;
+                    let price = item.Price+=item.price2;
 
                     return [price , quntity]
                 }
@@ -28,7 +28,7 @@ let cartData = (data = [], action) => {
                 if(item.id === action.data){
                     if(item.quntity !== 1){
                         let quntity = item.quntity-=1;
-                        let price = item.Price2-=item.Price;
+                        let price = item.Price-=item.price2;
 
                         return [price , quntity]
                     }

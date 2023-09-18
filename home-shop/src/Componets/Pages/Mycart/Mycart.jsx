@@ -8,7 +8,7 @@ import aset_11 from "../../../Componets/../assets/asset3.png"
 const Mycart = () => {
     let dispatch = useDispatch()
     let cartData = useSelector((state) => state.cartData)
-    let cartPrice = cartData.length && cartData.map((item) => item.Price2).reduce((pre, next) => pre + next)
+    let cartPrice = cartData.length && cartData.map((item) => item.Price).reduce((pre, next) => pre + next)
   return (
    <>
         <div className='mt-20'>
@@ -29,7 +29,7 @@ const Mycart = () => {
                 <thead>
                     <tr className='border'>
                         <th className='border p-5'>Images</th>
-                        <th className='border p-5'>Product</th>
+                        <th className='border p-5'>Name</th>
                         <th className='border p-5'>Unit price</th>
                         <th className='border p-5'>Quntity</th>
                         <th className='border p-5'>Total</th>
@@ -41,15 +41,15 @@ const Mycart = () => {
                     {
                         cartData.map((item) =>
                             <tr key={item.id} className='border text-center'>
-                                <td className='border'><img src={aset_11} className='w-auto h-24 mx-auto my-3' /></td>
-                                <td className='border'>${item.Buy}</td>
-                                <td className='border'>${item.Price}</td>
+                                <td className='border'><img src={item.image} className='w-auto h-24 mx-auto my-3' /></td>
+                                <td className='border'>${item.Name}</td>
+                                <td className='border'>${item.price2}</td>
                                 <td className='flex justify-center items-center mt-10 gap-5'>
                                     <button onClick={() => dispatch(decriment_qty(item.id))} className='border px-3 py-1'>-</button>
                                     <p className=''>{item.quntity}</p>
                                     <button onClick={() => dispatch(incriment_qty(item.id))} className='border px-3 py-1'>+</button>
                                 </td>
-                                <td className='border'>${item.Price2}</td>
+                                <td className='border'>${item.Price}</td>
                                 <td className='border'><button onClick={() => dispatch(removeToCart(item.id))}>x</button></td>
                             </tr>
                         )

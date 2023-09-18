@@ -33,7 +33,7 @@ const BestSelling = () => {
                         return (
                             <div class="one">
                                 <div class="card h-[300px] w-[260px]">
-                                    <img src={aset_11} alt="Not Show" class="ss cursor-pointer" style={{ height: "300px" }} />
+                                    <img src={topratedd.image} alt="Not Show" class="ss cursor-pointer" style={{ height: "300px" }} />
                                     <div class="info">
                                         <div class="one1 hover:bg-[#f50963]">
                                             <a href='#'>

@@ -55,7 +55,7 @@ const TopRated = () => {
                                         <button  onClick={()=>dispatch(addToCart(topratedd))}  class="w-[255px] h-[35px] bg-black text-white mt-[83px] ml-[-250px] hover:bg-[#f50963]">ADD TO CART</button>
                                     </div>
                                 </div>
-                                <p className="text-[15px] mt-2">{topratedd.Buy}</p>
+                                <p className='mt-4'>{topratedd.Name}</p>
                                 <p className="text-gray-700 mt-1"><del>{topratedd.Delprice}</del> {topratedd.Price}</p>
                             </div>
                         )
