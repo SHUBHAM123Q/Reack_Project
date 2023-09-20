@@ -61,7 +61,7 @@ const Fotter = () => {
               <p className="text-[#525258]">Copyright © 2023 by <a href="#" className="text-red-400">Hamart</a> All rights reserved.</p>
             </div>
             <div className=''>
-              <img src={aset_87} alt="not show" className='xl:ms-[328px] sm:ms-[43px] lg:ms-[219px] md:ms-[118px] 2xl:ms-[468px]'/>
+              <img src={aset_87} alt="not show" className='xl:ms-[328px] sm:ms-[43px] lg:ms-[219px] md:ms-[118px] 2xl:ms-[468px] mb-[50px]'/>
             </div>
           </div>
         </div>

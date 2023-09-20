@@ -10,6 +10,7 @@ import {useSelector} from "react-redux";
 
 const Navbar = () => {
   let Data = useSelector((state => state.cartData))
+  let WishData = useSelector((state => state.whishData))
 
     return (
       <>
@@ -71,7 +72,7 @@ const Navbar = () => {
                     </a>
                     <a href="#">
                       <img src={aset_92} alt="" />
-                      <p className='h-[18px] w-[18px] absolute ms-[11px] mt-[-25px]  text-center bg-red-400  rounded-full z-20'>1</p>
+                      <p className='h-[18px] w-[18px] absolute ms-[11px] mt-[-25px]  text-center bg-red-400  rounded-full z-20'>{WishData.length}</p>
                     </a>
                     <Link to='/Mycart'>
                     <img src={aset_93} alt="" />

@@ -3,7 +3,7 @@ import './Mycart.css';
 import emptycart from '../../../assets/emptycart.png'
 import { useSelector, useDispatch } from 'react-redux'
 import { decriment_qty, incriment_qty, removeToCart } from '../../../React Saga/Action'		
-import aset_11 from "../../../Componets/../assets/asset3.png"
+import {Link} from "react-router-dom";
 
 const Mycart = () => {
     let dispatch = useDispatch()
@@ -22,7 +22,7 @@ const Mycart = () => {
                 <img src={emptycart} alt='not show' className='mt-40'/>
             </div>
             <p className='text-[18px] text-center mt-10 text-[#03041c]'>Your Cart is empty</p>
-            <button className='shop flex m-auto hover:bg-black hover:text-white mt-2 px-6 py-2 bg-[#f1f1f1]'>Go To Shop</button>
+            <Link to='/' className='shop  flex justify-center m-auto max-w-[100px]  hover:bg-black hover:text-white mt-2  py-2 bg-[#f1f1f1]'>Go To Shop</Link>
         </div>
 
         <table className='w-11/12 xl:w-9/12 mx-auto mt-12 text-lg  table-fixed'>
