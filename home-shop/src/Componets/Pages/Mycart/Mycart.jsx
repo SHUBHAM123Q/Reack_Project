@@ -49,7 +49,7 @@ const Mycart = () => {
                                     <p className=''>{item.quntity}</p>
                                     <button onClick={() => dispatch(incriment_qty(item.id))} className='border px-3 py-1'>+</button>
                                 </td>
-                                <td className='border'>${item.Price}</td>
+                                <td className='border'>${item.Price.toFixed(2)}</td>
                                 <td className='border'><button onClick={() => dispatch(removeToCart(item.id))}>x</button></td>
                             </tr>
                         )
@@ -61,8 +61,8 @@ const Mycart = () => {
             <div className='w-10/12 h-auto flex justify-end mt-10'>
                 <div className=''>
                     <h1 className='text-2xl font-bold'>Cart Totals</h1>
-                    <h1 className='w-96 h-10 text-lg items-center mt-5 border flex justify-between px-4'> <p>Subtotal</p> <p> ${cartPrice}</p></h1>
-                    <h1 className='w-96 h-10 text-lg items-center border flex justify-between px-4'> <p>Total</p> <p> ${cartPrice}</p></h1>
+                    <h1 className='w-96 h-10 text-lg items-center mt-5 border flex justify-between px-4'> <p>Subtotal</p> <p> ${cartPrice.toFixed(2)}</p></h1>
+                    <h1 className='w-96 h-10 text-lg items-center border flex justify-between px-4'> <p>Total</p> <p> ${cartPrice.toFixed(2)}</p></h1>
                 </div>
             </div>
    </>
