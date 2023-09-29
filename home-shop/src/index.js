@@ -7,6 +7,7 @@ import Homemainpage from './Componets/Homemainpage/Homemainpage';
 import Aboutpage from './Componets/Aboutpage/Aboutpage';
 import Shop from './Componets/Shop/Shop';
 import Contactus from './Componets/Contactus/Contactus';
+import FAQs from './Componets/Pages/FAQs/FAQs';
 import Login from './Componets/Pages/Login/Login';
 import Privacy from './Componets/Pages/Privacy/Privacy';
 import Register from './Componets/Pages/Register/Register';
@@ -21,7 +22,10 @@ import TopRated from './Componets/Homemainpage/Section3/TopRated';
 import BestSelling from './Componets/Homemainpage/Section3/BestSelling';
 import LatestProduct from './Componets/Homemainpage/Section3/LatestProduct';
 import { Provider } from 'react-redux';
-import store from "./React Saga/Store"
+import store from "./React Saga/Store";
+import Community from './Componets/Pages/FAQs/Community';
+import Generalquestions from './Componets/Pages/FAQs/Generalquestions';
+import Support from './Componets/Pages/FAQs/Support';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
@@ -33,6 +37,11 @@ root.render(
          <Route path="/" element={<TopRated/>}></Route>
          <Route path="Selling" element={<BestSelling/>}></Route>
          <Route path="Latest" element={<LatestProduct/>}></Route>
+      </Route>
+      <Route path="/FAQs" element={<FAQs/>}>
+         <Route path="" element={<Generalquestions/>}></Route>
+         <Route path="Community" element={<Community/>}></Route>
+         <Route path="Support" element={<Support/>}></Route>
       </Route>
       <Route path="/About" element={<Aboutpage/>}></Route>
       <Route path='/Shop' element={<Shop/>}></Route>

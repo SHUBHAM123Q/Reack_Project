@@ -61,11 +61,11 @@ const Sec1 = () => {
             </div>
 
 
-            <div className='w-[200px] ms-10  me-[35px] mt-[17px]'>
+            <div className='w-[200px] ms-10  me-[35px] mt-[15px] '>
               <details className='group'>
-                <summary className='flex justify-between border-2'>
-                  <span className='text-[17px] mt-1'>Short Filter</span>
-                  <span className='group-open:rotate-90'>
+                <summary className='flex justify-between border-2 h-[38px]'>
+                  <span className='ms-1 text-[17px] mt-1'>Short Filter</span>
+                  <span className='group-open:rotate-90 mt-1'>
                     <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.3" viewBox="0 0 24 24" width="24" className='-rotate-90'><path d="M6 9l6 6 6-6"></path>
                     </svg>
                   </span>
@@ -304,7 +304,7 @@ const Sec1 = () => {
       </div>
       <nav className='mt-10'>
         <ul className='flex justify-center gap-3'>
-          <li onClick={previousPage} className='cursor-pointer border px-4 py-2 hover:bg-custom-pink hover:text-white'>
+          <li onClick={previousPage} className='cursor-pointer border px-4 py-2 hover:bg-pink-500 hover:text-white'>
             <a className=''>
               <i className="fa-solid fa-arrow-left"></i>  Previous
             </a>
@@ -316,7 +316,7 @@ const Sec1 = () => {
               </a>
             </li>
           ))}
-          <li onClick={nextPage} className='cursor-pointer border px-4 py-2 hover:bg-custom-pink hover:text-white'>
+          <li onClick={nextPage} className='cursor-pointer border px-4 py-2 hover:bg-pink-500 hover:text-white'>
             <a className=''>
               Next <i className="fa-solid fa-arrow-right"></i>
             </a>

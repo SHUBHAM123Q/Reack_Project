@@ -45,7 +45,7 @@ const Navbar = () => {
                       </button>
                       <div className="dropdown-menu absolute hidden pt-5 pb-5 px-5 w-48 bg-white shadow-xl text-sm leading-7 cursor-pointer">
   
-                        <a href="#" className="hover:text-pink-700">FAQs</a> <br />
+                        <Link to='/FAQs' className="hover:text-pink-700">FAQs</Link> <br />
                         <Link to='/Privacy' className="hover:text-pink-700">Privacy & Policy</Link> <br />
                         <Link to='/Terms' className="hover:text-pink-700">Terms & conditions</Link> <br />
                         <Link to='/Login' className="hover:text-pink-700">Login</Link> <br />
