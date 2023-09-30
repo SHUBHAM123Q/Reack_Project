@@ -20,7 +20,7 @@ const FAQs = () => {
             <div className='xs:m-auto xs:max-w-[290px] sm:max-w-[550px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1120px] 2xl:max-w-[1440px]'>
                 <div className='grid grid-cols-1'>
                     <div>
-                        <img src={faqs1} alt='not show'></img>
+                        <img className='w-[1500px]' src={faqs1} alt='not show'></img>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@ const FAQs = () => {
             <div className='xs:m-auto xs:max-w-[290px] sm:max-w-[550px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1120px] 2xl:max-w-[1440px]'>
                 <div className='grid sm:grid-cols-2 md:grid-cols-3 mt-[100px] md:w-[510px]'>
                     <div className='hover:bg-[#b5b5c285] py-2'>
-                        <Link to='' className='text-[20px] md:ms-2 '>Generalquestions</Link>
+                        <Link to='' className='text-[20px] md:ms-1'>Generalquestions</Link>
                     </div>
                     <div className='py-2 hover:bg-[#b5b5c285] md:w-[140px] '>
                         <Link to='Community' className='text-[20px] md:ms-5'>Community</Link>
