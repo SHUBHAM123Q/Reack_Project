@@ -13,6 +13,7 @@ const Sec1 = () => {
 
   let dispatch = useDispatch();
   let data = useSelector((state) => state.productData)
+  let [count , setCount] = useState("")
 
   useEffect(() => {
     dispatch(productList())
@@ -215,11 +216,11 @@ const Sec1 = () => {
               <hr></hr>
               <input type='search' className='border-2 py-2 px-3 w-[300px] mt-3' placeholder='Search Brands' />
               <div className='h-[120px] overflow-auto mt-8'>
-                <input type='radio' name='brands' className='w-4 h-4 '></input><span className='ms-3 text-[16px]'>Sony</span><br />
-                <input type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>Logitech</span><br />
-                <input type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>Samsung</span><br />
-                <input type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>Apple</span><br />
-                <input type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>Deepcool</span>
+                <input onClick={() => setCount("sony")} type='radio' name='brands' className='w-4 h-4 '></input><span className='ms-3 text-[16px]'>Sony</span><br />
+                <input onClick={() => setCount("logitech")} type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>Logitech</span><br />
+                <input onClick={() => setCount("samsung")} type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>Samsung</span><br />
+                <input onClick={() => setCount("apple")} type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>Apple</span><br />
+                <input onClick={() => setCount("deepcool")} type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>Deepcool</span>
               </div>
             </details>
           </div>
@@ -266,14 +267,42 @@ const Sec1 = () => {
             </details>
           </div>
 
-          <button className='bg-pink-500 text-white py-2 w-[300px] font-semibold hover:bg-indigo-500 hover:duration-300'>Reset Filter</button>
+          <button onClick={() => setCount("")} className='bg-pink-500 text-white py-2 w-[300px] font-semibold hover:bg-indigo-500 hover:duration-300'>Reset Filter</button>
 
         </div>
 
         <div className='w-[800px] mt-9'>
           <div className='containerrr h-auto flex justify-between flex-wrap'>
             {
-              record.map(topratedd => {
+              count === "" && record.map(topratedd => {
+                return (
+                  <div class="one overflow-hidden">
+                    <div class="card h-[300px] w-[260px]">
+                      <img src={topratedd.image} alt="Not Show" class="ss cursor-pointer" style={{ height: "300px" }} />
+                      <div class="info">
+                        <div class="one1 hover:bg-[#f50963] group">
+                          <i onClick={() => dispatch(addTowish(topratedd))} class="fa-regular fa-heart text-[20px] ms-2 mt-2 group-hover:text-white"></i>
+                        </div>
+                        <div class="one2 hover:bg-[#f50963] group">
+                          <i class="fa-regular fa-eye text-[20px] ms-2 mt-2 group-hover:text-white"></i>
+                        </div>
+                        <div class="one3 hover:bg-[#f50963]">
+                          <i class="fa-solid fa-link text-[20px] ms-2 mt-2 group-hover:text-white"></i>
+                        </div>
+                      </div>
+                      <div class="info1">
+                        <button onClick={() => dispatch(addToCart(topratedd))} class="w-[255px] h-[35px] bg-black text-white mt-[83px] ml-[-250px] hover:bg-[#f50963]">ADD TO CART</button>
+                      </div>
+                    </div>
+                    <p className='mt-4 text-[11px]'>{topratedd.Name}</p>
+                    <p className="text-gray-700 mt-1"><del>{topratedd.Delprice}</del> {topratedd.Price}</p>
+                  </div>
+                )
+              })
+            }
+
+            {
+              data.filter((el) => {return el.brand === count}).map(topratedd => {
                 return (
                   <div class="one overflow-hidden">
                     <div class="card h-[300px] w-[260px]">
