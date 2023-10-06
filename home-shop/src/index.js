@@ -26,11 +26,13 @@ import store from "./React Saga/Store";
 import Community from './Componets/Pages/FAQs/Community';
 import Generalquestions from './Componets/Pages/FAQs/Generalquestions';
 import Support from './Componets/Pages/FAQs/Support';
+import Scroolbutton from './Scroolbutton';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
    <Provider store={store}>
    <BrowserRouter>
+   <Scroolbutton/>
    <Navbar/>
    <Routes>
       <Route path="/" element={<Homemainpage/>}>
