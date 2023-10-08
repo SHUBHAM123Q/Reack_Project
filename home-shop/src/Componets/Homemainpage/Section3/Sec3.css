@@ -3,8 +3,8 @@
 }
 
 .card{
-    width: 255px;
-    height: 300px;
+    /* width: 255px; */
+    /* height: 300px; */
     padding: 2rem , 1rem;
     /* background : palevioletred; */
     position: relative;
@@ -31,8 +31,6 @@
 
 .card img{
     position: absolute;
-    height: 200%;
-    width: 100%;
     object-fit: cover;
 }
 
@@ -59,24 +57,18 @@
     height: 40px;
     width: 40px;
     background-color: white;
-    margin-top: -260px;
-    margin-left: 208px;
 }
 
 .one2{
     height: 40px;
     width: 40px;
     background-color: white;
-    margin-top: 10px;
-    margin-left: 208px;
 }
 
 .one3{
     height: 40px;
     width: 40px;
     background-color: white;
-    margin-top: 10px;
-    margin-left: 208px;
 }
 
 
@@ -98,10 +90,6 @@
 }
 body{
     margin: 0;
-}
-.containerrr{
-  max-width: 1120px;
-  margin: auto;
 }
 #Sec3:focus{
     color: #f50986;

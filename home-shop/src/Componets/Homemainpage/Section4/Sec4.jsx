@@ -4,22 +4,20 @@ import '../Section4/Sec4.css';
 
 
 const Sec4 = () => {
-  return (
-    <>
-        <div className='containerrr'>
-            <div className='mt-10'>
-                <div className='flex justify-between'>
+    return (
+        <>
+            <div className='xs:m-auto xs:max-w-[290px] sm:max-w-[550px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1120px] 2xl:max-w-[1440px]'>
+                <div className='grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 mt-[200px]'>
                     <div className="flex">
                         <p className="relative after:absolute bg-red-500 h-[35px] w-[4px] mt-[2px]" />
                         <p className='mt-[3px] text-[30px] leading-[30px] font-bold ms-3'>Deal of The Day</p>
                     </div>
-                    <div>
-                        <button className='bg-[#f50963] px-7 hover:bg-blue-400 hover:duration-500 py-2 text-[16px] text-[white] leading-[26px]   text-center tracking-[-0.32px]' style={{fontFamily:"sans-serif", fontWeight:"400"}}>View All Products</button>
+                    <div className='md:flex md:justify-end  xs:mt-[40px] md:mt-[0px]'>
+                        <button className='bg-[#f50963] px-7 hover:bg-blue-400 hover:duration-500 py-2 text-[16px] text-[white] leading-[26px]   text-center tracking-[-0.32px]' style={{ fontFamily: "sans-serif", fontWeight: "400" }}>View All Products</button>
                     </div>
                 </div>
-            </div>
 
-            {/* <div className='containerrr'>
+                {/* <div className='containerrr'>
                 <div className='flex ms-[-20px]'>
                     <div className="container">
                       <div className="item flex">
@@ -78,9 +76,9 @@ const Sec4 = () => {
                     </div>
                 </div>
             </div>  */}
-        </div>
-    </>
-  )
+            </div>
+        </>
+    )
 }
 
 export default Sec4
