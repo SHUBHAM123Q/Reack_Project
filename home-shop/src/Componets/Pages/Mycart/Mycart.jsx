@@ -25,7 +25,11 @@ const Mycart = () => {
             <Link to='/' className='shop  flex justify-center m-auto max-w-[100px]  hover:bg-black hover:text-white mt-2  py-2 bg-[#f1f1f1]'>Go To Shop</Link>
         </div>
 
-        <table className='w-11/12 xl:w-9/12 mx-auto mt-12 text-lg  table-fixed'>
+
+        <div className='xs:m-auto xs:max-w-[290px] sm:max-w-[550px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1120px] 2xl:max-w-[1440px] xs:overflow-auto'>
+            <div className='grid xl:grid-cols-1'>
+                <div>
+                <table className='sm:w-[550px] md:w-[700px] lg:w-[900px] xl:w-[1120px] 2xl:w-[1440px] mt-12 text-lg'>
                 <thead>
                     <tr className='border'>
                         <th className='border p-5'>Images</th>
@@ -37,7 +41,7 @@ const Mycart = () => {
                     </tr>
                 </thead>
 
-                <tbody>
+                <tbody className=''>
                     {
                         cartData.map((item) =>
                             <tr key={item.id} className='border text-center'>
@@ -45,9 +49,9 @@ const Mycart = () => {
                                 <td className='border'>${item.Name}</td>
                                 <td className='border'>${item.price2}</td>
                                 <td className='flex justify-center items-center mt-10 gap-5'>
-                                    <button onClick={() => dispatch(decriment_qty(item.id))} className='border px-3 py-1'>-</button>
+                                    <button onClick={() => dispatch(decriment_qty(item.id))} className='border xs:ms-2 px-3 py-1'>-</button>
                                     <p className=''>{item.quntity}</p>
-                                    <button onClick={() => dispatch(incriment_qty(item.id))} className='border px-3 py-1'>+</button>
+                                    <button onClick={() => dispatch(incriment_qty(item.id))} className='border xs:me-2 px-3 py-1'>+</button>
                                 </td>
                                 <td className='border'>${item.Price.toFixed(2)}</td>
                                 <td className='border'><button onClick={() => dispatch(removeToCart(item.id))}>x</button></td>
@@ -57,12 +61,17 @@ const Mycart = () => {
                 </tbody>
             </table>
 
+                </div>
+            </div>
+        </div>
 
-            <div className='w-10/12 h-auto flex justify-end mt-10'>
-                <div className=''>
+       
+
+            <div className='xs:m-auto xs:max-w-[290px] sm:max-w-[550px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1120px] 2xl:max-w-[1440px] flex justify-end'>
+                <div className='mt-20'>
                     <h1 className='text-2xl font-bold'>Cart Totals</h1>
-                    <h1 className='w-96 h-10 text-lg items-center mt-5 border flex justify-between px-4'> <p>Subtotal</p> <p> ${cartPrice.toFixed(2)}</p></h1>
-                    <h1 className='w-96 h-10 text-lg items-center border flex justify-between px-4'> <p>Total</p> <p> ${cartPrice.toFixed(2)}</p></h1>
+                    <h1 className='xs:w-[290px] h-10 text-lg items-center mt-5 border flex justify-between px-4'> <p>Subtotal</p> <p> ${cartPrice.toFixed(2)}</p></h1>
+                    <h1 className='h-10 text-lg items-center border flex justify-between px-4'> <p>Total</p> <p> ${cartPrice.toFixed(2)}</p></h1>
                 </div>
             </div>
    </>

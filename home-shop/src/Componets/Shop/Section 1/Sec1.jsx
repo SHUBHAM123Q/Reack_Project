@@ -77,49 +77,36 @@ const Sec1 = () => {
 
   return (
     <>
-      <div className='max-w-[1120px] m-auto border-[1px] border-[#ababab] h-auto mt-[200px]  pb-2'>
-        <div className='flex justify-between'>
-          <div className='ms-[35px] mt-[20px]'>
-            <p className='text-[18px]'>Showing 1–9 of 27 results</p>
+      <div className='xs:m-auto xs:max-w-[290px] sm:max-w-[550px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1120px] 2xl:max-w-[1440px]'>
+        <div className='mt-[200px] border-2 py-6 grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2'>
+          <div className='py-3'>
+            <p className='text-[18px]  ms-5'>Showing 1–9 of 27 results</p>
           </div>
-
-          <div className='flex'>
-            <div>
-              <i class="fa-solid fa-table-cells-large text-[25px] text-[#f50963] me-[20px] mt-[20px]"></i>
-
-            </div>
-
-            <div>
-              <i class="fa-solid fa-bars text-[25px] text-[#ababab] me-[-20px] mt-[20px]"></i>
-            </div>
-
-
-            <div className='w-[200px] ms-10  me-[35px] mt-[15px] '>
-              <details className='group'>
-                <summary className='flex justify-between border-2 h-auto'>
-                  <span className='ms-1 text-[17px] mt-1'>Short Filter</span>
-                  <span className='group-open:rotate-90 mt-1'>
-                    <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.3" viewBox="0 0 24 24" width="24" className='-rotate-90'><path d="M6 9l6 6 6-6"></path>
-                    </svg>
-                  </span>
-                </summary>
-                <ul>
-                  <li onClick={shorkfilter1} className='mb-1 cursor-pointer text-[16px] ms-1'>Short Filter</li>
-                  <li onClick={latestfilter} className='mb-1 cursor-pointer text-[16px] ms-1'>Latest Product</li>
-                  <li onClick={pricefilter} className='mb-1 cursor-pointer text-[16px] ms-1'>Price low to high</li>
-                  <li onClick={highfilter} className='mb-1 cursor-pointer text-[16px] ms-1'>Price high to low</li>
-                </ul>
-              </details>
-            </div>
+          <div className='xs:ms-5 sm:flex sm:justify-start sm:ms-5 md:sm-0 md:flex md:justify-end'>
+            <i class="fa-solid fa-table-cells-large text-[25px] text-[#ababab] me-[30px] mt-3"></i>
+            <i class="fa-solid fa-bars text-[25px] text-[#ababab] me-[30px] mt-3"></i>
+            <details className='group me-5 w-[250px]'>
+              <summary className='flex justify-between py-2 border-2 h-auto xs:mt-4 sm:mt-0'>
+                <span className='ms-2 text-[17px] mt-1 '>Short Filter</span>
+                <span className='group-open:rotate-90 mt-1'>
+                  <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.3" viewBox="0 0 24 24" width="24" className='-rotate-90'><path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <ul className='mt-3'>
+                <li onClick={shorkfilter1} className='mb-1 cursor-pointer text-[16px] ms-1'>Short Filter</li>
+                <li onClick={latestfilter} className='mb-1 cursor-pointer text-[16px] ms-1'>Latest Product</li>
+                <li onClick={pricefilter} className='mb-1 cursor-pointer text-[16px] ms-1'>Price low to high</li>
+                <li onClick={highfilter} className='mb-1 cursor-pointer text-[16px] ms-1'>Price high to low</li>
+              </ul>
+            </details>
           </div>
         </div>
       </div>
 
-
-
       <div className='flex justify-between xs:m-auto xs:max-w-[290px] sm:max-w-[550px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1120px] 2xl:max-w-[1440px] flex-wrap'>
         <div>
-          <div className='mt-[90px] w-[300px]'>
+          <div className='mt-[90px] xs:w-[300px] sm:w-[550px] md:w-[700px] lg:w-[900px] xl:w-[300px]'>
             <details className='group transition-1000'>
               <summary className='flex justify-between transition-1000'>
                 <span className='ipad text-[19px] text-[#232323]'>Ipad Phone & Tablets</span>
@@ -137,7 +124,7 @@ const Sec1 = () => {
 
           </div>
 
-          <div className='mt-1 w-[300px] '>
+          <div className='mt-1 w-[300px] xs:w-[300px] sm:w-[550px] md:w-[700px] lg:w-[900px] xl:w-[300px]'>
             <details className='group'>
               <summary className='flex justify-between'>
                 <span className='ipad text-[19px] text-[#232323]'>Planer & Virtual</span>
@@ -153,7 +140,7 @@ const Sec1 = () => {
             </details>
           </div>
 
-          <div className='mt-1 w-[300px] '>
+          <div className='mt-1 w-[300px] xs:w-[300px] sm:w-[550px] md:w-[700px] lg:w-[900px] xl:w-[300px]'>
             <details className='group'>
               <summary className='flex justify-between'>
                 <span className='ipad text-[19px] text-[#232323]'>Spinning Reel & Kettle</span>
@@ -169,7 +156,7 @@ const Sec1 = () => {
             </details>
           </div>
 
-          <div className='mt-1 w-[300px] '>
+          <div className='mt-1 w-[300px] xs:w-[300px] sm:w-[550px] md:w-[700px] lg:w-[900px] xl:w-[300px]'>
             <details className='group'>
               <summary className='flex justify-between'>
                 <span className='ipad text-[19px] text-[#232323]'>Computers Monitor & Laptop</span>
@@ -186,7 +173,7 @@ const Sec1 = () => {
             </details>
           </div>
 
-          <div className='mt-1 w-[300px] '>
+          <div className='mt-1 w-[300px] xs:w-[300px] sm:w-[550px] md:w-[700px] lg:w-[900px] xl:w-[300px]'>
             <details className='group'>
               <summary className='flex justify-between'>
                 <span className='ipad text-[19px] text-[#232323]'>Exercise Bike & Shaver Clean</span>
@@ -202,7 +189,7 @@ const Sec1 = () => {
             </details>
           </div>
 
-          <div className='mt-1 w-[300px] '>
+          <div className='mt-1 w-[300px] xs:w-[300px] sm:w-[550px] md:w-[700px] lg:w-[900px] xl:w-[300px]'>
             <details className='group'>
               <summary className='flex justify-between'>
                 <span className='ipad text-[19px] text-[#232323]'>Wireless & Watches</span>
@@ -218,7 +205,7 @@ const Sec1 = () => {
             </details>
           </div>
 
-          <div className='mt-1 w-[300px] '>
+          <div className='mt-1 w-[300px] xs:w-[300px] sm:w-[550px] md:w-[700px] lg:w-[900px] xl:w-[300px]'>
             <details className='group'>
               <summary className='flex justify-between'>
                 <span className='ipad text-[19px] text-[#232323]'>Camera Bluetooth & Headset</span>
@@ -235,7 +222,7 @@ const Sec1 = () => {
             </details>
           </div>
 
-          <div className='w-[300px] mt-12'>
+          <div className='w-[300px] mt-12 xs:w-[300px] sm:w-[550px] md:w-[700px] lg:w-[900px] xl:w-[300px]'>
             <details className='group' open>
               <summary className='flex justify-between'>
                 <span className='ipad text-[19px] text-[#232323]'>Brands</span>
@@ -245,7 +232,7 @@ const Sec1 = () => {
                 </span>
               </summary>
               <hr></hr>
-              <input type='search' className='border-2 py-2 px-3 w-[300px] mt-3' placeholder='Search Brands' />
+              <input type='search' className='border-2 py-2 px-3 xs:w-[300px] sm:w-[550px] md:w-[700px] lg:w-[900px] xl:w-[300px]  mt-3' placeholder='Search Brands' />
               <div className='h-[120px] overflow-auto mt-8'>
                 <input onClick={() => setCount("sony")} type='radio' name='brands' className='w-4 h-4 '></input><span className='ms-3 text-[16px]'>Sony</span><br />
                 <input onClick={() => setCount("logitech")} type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>Logitech</span><br />
@@ -256,7 +243,7 @@ const Sec1 = () => {
             </details>
           </div>
 
-          <div className='w-[300px] mt-12'>
+          <div className='w-[300px] mt-12 xs:w-[300px] sm:w-[550px] md:w-[700px] lg:w-[900px] xl:w-[300px]'>
             <details className='group' open>
               <summary className='flex justify-between'>
                 <span className='ipad text-[19px] text-[#232323]'>Colors</span>
@@ -267,7 +254,7 @@ const Sec1 = () => {
               </summary>
               <hr></hr>
               <div className='h-[150px] overflow-auto mt-8'>
-                <input type='radio' name='brands' className='w-4 h-4 '></input><span className='ms-3 text-[16px]'>Green</span><br />
+                <input onClick={() => setCount("pink")} type='radio' name='brands' className='w-4 h-4 '></input><span className='ms-3 text-[16px]'>Green</span><br />
                 <input type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>Orenge</span><br />
                 <input type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>Black</span><br />
                 <input type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>Red</span><br />
@@ -279,7 +266,7 @@ const Sec1 = () => {
             </details>
           </div>
 
-          <div className='w-[300px] mt-12'>
+          <div className='w-[300px] mt-12 xs:w-[300px] sm:w-[550px] md:w-[700px] lg:w-[900px] xl:w-[300px]'>
             <details className='group' open>
               <summary className='flex justify-between'>
                 <span className='ipad text-[19px] text-[#232323]'>Price</span>
@@ -290,52 +277,202 @@ const Sec1 = () => {
               </summary>
               <hr></hr>
               <div className='h-[150px] overflow-auto mt-8'>
-                <input onClick={() => sortOne(10.00, 49.00)} type='radio' name='brands' className='w-4 h-4 '></input><span className='ms-3 text-[16px]'>$10.00 - $49.00</span><br />
-                <input type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>$50.00 - $99.00</span><br />
-                <input type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>$100.00 - $199.00</span><br />
-                <input type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>$200 +</span>
+                <input onClick={() => sortOne(20.00 , 49.00)} type='radio' name='brands' className='w-4 h-4 '></input><span className='ms-3 text-[16px]'>$10.00 - $49.00</span><br />
+                <input onClick={() => sortOne(50.00 , 99.00)} type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>$50.00 - $99.00</span><br />
+                <input onClick={() => sortOne(100.00 , 199.00)} type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>$100.00 - $199.00</span><br />
+                <input onClick={() => sortOne(200.00 , 10000)} type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>$200 +</span>
               </div>
             </details>
           </div>
 
-          <button onClick={() => setCount("")} className='bg-pink-500 text-white py-2 w-[300px] font-semibold hover:bg-indigo-500 hover:duration-300'>Reset Filter</button>
+          <button onClick={() => setCount("")} className='bg-pink-500 text-white py-2 xs:w-[300px] sm:w-[550px] md:w-[700px] lg:w-[900px] xl:w-[300px] font-semibold hover:bg-indigo-500 hover:duration-300'>Reset Filter</button>
         </div>
 
-        <div className='w-[800px] mt-9'>
-        <div className='xs:m-auto xs:max-w-[290px] sm:max-w-[550px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1120px] 2xl:max-w-[1440px]'>
-                <div className='grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-9'>
-                    {
-                        data.filter((el) => { return el.type === 'top rated' }).map(topratedd => {
-                            return (
-                                <>
-                                    <div className='one'>
-                                        <div className='card h-[300px] inline-block'>
-                                            <img src={topratedd.image} className='ss xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[390px] ' style={{ height: "300px" }} />
-                                            <div className='info'>
-                                                <div class="one1 hover:bg-[#f50963] group xs:mt-[-210px] xs:ml-[240px] sm:mt-[-210px] sm:ml-[210px] md:mt-[-220px] md:ml-[280px] lg:mt-[-240px] lg:ml-[230px] xl:mt-[-260px] xl:ml-[200px] 2xl:mt-[-240px] 2xl:ml-[290px]">
-                                                    <i onClick={() => dispatch(addTowish(topratedd))} class="fa-regular fa-heart text-[20px] ms-2 mt-2 group-hover:text-white "></i>
-                                                </div>
-                                                <div class="one2 hover:bg-[#f50963] group xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[230px] xl:mt-[10px] xl:ml-[200px] 2xl:ml-[290px]">
-                                                    <i class="fa-regular fa-eye text-[20px] ms-2 mt-2 group-hover:text-white"></i>
-                                                </div>
-                                                <div class="one3 hover:bg-[#f50963] xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[230px] xl:mt-[10px] xl:ml-[200px]  2xl:ml-[290px]">
-                                                    <i class="fa-solid fa-link text-[20px] ms-2 mt-2 group-hover:text-white"></i>
-                                                </div>
-                                            </div>
-                                            <div class="info1 xs:ml-[-320px] sm:ml-[-280px] md:ml-[-350px] lg:ml-[-300px] xl:ml-[-280px] 2xl:ml-[-390px]">
-                                                <button onClick={() => dispatch(addToCart(topratedd))} class="h-[35px] bg-black text-white  hover:bg-[#f50963] ms-8 xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[390px]">ADD TO CART</button>
-                                            </div>
+        <div className='lg:w-[800px] 2xl:w-[1100px] mt-9 '>
+          <div className='xs:m-auto xs:max-w-[290px] sm:max-w-[550px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1120px] 2xl:max-w-[1440px]'>
+            <div className='grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-9'>
+              {
+                count === "" && record.map(topratedd => {
+                  return (
+                    <>
+                      <div className='one'>
+                        <div className='card h-[300px] inline-block'>
+                          <img src={topratedd.image} className='ss xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[390px] ' style={{ height: "300px" }} />
+                          <div className='info'>
+                            <div class="one1 hover:bg-[#f50963] group xs:mt-[-210px] xs:ml-[240px] sm:mt-[-210px] sm:ml-[210px] md:mt-[-220px] md:ml-[280px] lg:mt-[-240px] lg:ml-[200px] xl:mt-[-260px] xl:ml-[200px] 2xl:mt-[-240px] 2xl:ml-[200px]">
+                              <i onClick={() => dispatch(addTowish(topratedd))} class="fa-regular fa-heart text-[20px] ms-2 mt-2 group-hover:text-white "></i>
+                            </div>
+                            <div class="one2 hover:bg-[#f50963] group xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px] 2xl:ml-[200px]">
+                              <i class="fa-regular fa-eye text-[20px] ms-2 mt-2 group-hover:text-white"></i>
+                            </div>
+                            <div class="one3 hover:bg-[#f50963] xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px]  2xl:ml-[200px]">
+                              <i class="fa-solid fa-link text-[20px] ms-2 mt-2 group-hover:text-white"></i>
+                            </div>
+                          </div>
+                          <div class="info1 xs:ml-[-320px] sm:ml-[-280px] md:ml-[-350px] lg:ml-[-300px] xl:ml-[-280px] 2xl:ml-[-390px]">
+                            <button onClick={() => dispatch(addToCart(topratedd))} class="h-[35px] bg-black text-white  hover:bg-[#f50963] ms-8 lg:ms-[50px] 2xl:ms-[80px] xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[400px]">ADD TO CART</button>
+                          </div>
 
-                                        </div>
-                                        <p className='mt-4'>{topratedd.Name}</p>
-                                        <p className="text-gray-700 mt-1"><del>{topratedd.Delprice}</del> {topratedd.Price}</p>
-                                    </div>
-                                </>
-                            )
-                        })
-                    }
-                </div>
+                        </div>
+                        <p className='mt-4'>{topratedd.Name}</p>
+                        <p className="text-gray-700 mt-1"><del>{topratedd.Delprice}</del> {topratedd.Price}</p>
+                      </div>
+                    </>
+                  )
+                })
+              }
+              {
+                data.filter((el) => { return el.brand === count }).map(topratedd => {
+                  return (
+                    <>
+                      <div className='one'>
+                        <div className='card h-[300px] inline-block'>
+                          <img src={topratedd.image} className='ss xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[390px] ' style={{ height: "300px" }} />
+                          <div className='info'>
+                            <div class="one1 hover:bg-[#f50963] group xs:mt-[-210px] xs:ml-[240px] sm:mt-[-210px] sm:ml-[210px] md:mt-[-220px] md:ml-[280px] lg:mt-[-240px] lg:ml-[200px] xl:mt-[-260px] xl:ml-[200px] 2xl:mt-[-240px] 2xl:ml-[200px]">
+                              <i onClick={() => dispatch(addTowish(topratedd))} class="fa-regular fa-heart text-[20px] ms-2 mt-2 group-hover:text-white "></i>
+                            </div>
+                            <div class="one2 hover:bg-[#f50963] group xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px] 2xl:ml-[200px]">
+                              <i class="fa-regular fa-eye text-[20px] ms-2 mt-2 group-hover:text-white"></i>
+                            </div>
+                            <div class="one3 hover:bg-[#f50963] xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px]  2xl:ml-[200px]">
+                              <i class="fa-solid fa-link text-[20px] ms-2 mt-2 group-hover:text-white"></i>
+                            </div>
+                          </div>
+                          <div class="info1 xs:ml-[-320px] sm:ml-[-280px] md:ml-[-350px] lg:ml-[-300px] xl:ml-[-280px] 2xl:ml-[-390px]">
+                            <button onClick={() => dispatch(addToCart(topratedd))} class="h-[35px] bg-black text-white  hover:bg-[#f50963] ms-8 lg:ms-[50px] 2xl:ms-[80px] xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[400px]">ADD TO CART</button>
+                          </div>
+
+                        </div>
+                        <p className='mt-4'>{topratedd.Name}</p>
+                        <p className="text-gray-700 mt-1"><del>{topratedd.Delprice}</del> {topratedd.Price}</p>
+                      </div>
+                    </>
+                  )
+                })
+              }
+              {
+                data.filter((el) => { return el.categaty === count }).map(topratedd => {
+                  return (
+                    <>
+                      <div className='one'>
+                        <div className='card h-[300px] inline-block'>
+                          <img src={topratedd.image} className='ss xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[390px] ' style={{ height: "300px" }} />
+                          <div className='info'>
+                            <div class="one1 hover:bg-[#f50963] group xs:mt-[-210px] xs:ml-[240px] sm:mt-[-210px] sm:ml-[210px] md:mt-[-220px] md:ml-[280px] lg:mt-[-240px] lg:ml-[200px] xl:mt-[-260px] xl:ml-[200px] 2xl:mt-[-240px] 2xl:ml-[200px]">
+                              <i onClick={() => dispatch(addTowish(topratedd))} class="fa-regular fa-heart text-[20px] ms-2 mt-2 group-hover:text-white "></i>
+                            </div>
+                            <div class="one2 hover:bg-[#f50963] group xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px] 2xl:ml-[200px]">
+                              <i class="fa-regular fa-eye text-[20px] ms-2 mt-2 group-hover:text-white"></i>
+                            </div>
+                            <div class="one3 hover:bg-[#f50963] xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px]  2xl:ml-[200px]">
+                              <i class="fa-solid fa-link text-[20px] ms-2 mt-2 group-hover:text-white"></i>
+                            </div>
+                          </div>
+                          <div class="info1 xs:ml-[-320px] sm:ml-[-280px] md:ml-[-350px] lg:ml-[-300px] xl:ml-[-280px] 2xl:ml-[-390px]">
+                            <button onClick={() => dispatch(addToCart(topratedd))} class="h-[35px] bg-black text-white  hover:bg-[#f50963] ms-8 lg:ms-[50px] 2xl:ms-[80px] xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[400px]">ADD TO CART</button>
+                          </div>
+
+                        </div>
+                        <p className='mt-4'>{topratedd.Name}</p>
+                        <p className="text-gray-700 mt-1"><del>{topratedd.Delprice}</del> {topratedd.Price}</p>
+                      </div>
+                    </>
+                  )
+                })
+              }
+              {
+                data.filter((el) => { return el.type === count }).map(topratedd => {
+                  return (
+                    <>
+                      <div className='one'>
+                        <div className='card h-[300px] inline-block'>
+                          <img src={topratedd.image} className='ss xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[390px] ' style={{ height: "300px" }} />
+                          <div className='info'>
+                            <div class="one1 hover:bg-[#f50963] group xs:mt-[-210px] xs:ml-[240px] sm:mt-[-210px] sm:ml-[210px] md:mt-[-220px] md:ml-[280px] lg:mt-[-240px] lg:ml-[200px] xl:mt-[-260px] xl:ml-[200px] 2xl:mt-[-240px] 2xl:ml-[200px]">
+                              <i onClick={() => dispatch(addTowish(topratedd))} class="fa-regular fa-heart text-[20px] ms-2 mt-2 group-hover:text-white "></i>
+                            </div>
+                            <div class="one2 hover:bg-[#f50963] group xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px] 2xl:ml-[200px]">
+                              <i class="fa-regular fa-eye text-[20px] ms-2 mt-2 group-hover:text-white"></i>
+                            </div>
+                            <div class="one3 hover:bg-[#f50963] xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px]  2xl:ml-[200px]">
+                              <i class="fa-solid fa-link text-[20px] ms-2 mt-2 group-hover:text-white"></i>
+                            </div>
+                          </div>
+                          <div class="info1 xs:ml-[-320px] sm:ml-[-280px] md:ml-[-350px] lg:ml-[-300px] xl:ml-[-280px] 2xl:ml-[-390px]">
+                            <button onClick={() => dispatch(addToCart(topratedd))} class="h-[35px] bg-black text-white  hover:bg-[#f50963] ms-8 lg:ms-[50px] 2xl:ms-[80px] xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[400px]">ADD TO CART</button>
+                          </div>
+
+                        </div>
+                        <p className='mt-4'>{topratedd.Name}</p>
+                        <p className="text-gray-700 mt-1"><del>{topratedd.Delprice}</del> {topratedd.Price}</p>
+                      </div>
+                    </>
+                  )
+                })
+              }
+              {
+                data.filter((el) => { return el.color === count }).map(topratedd => {
+                  return (
+                    <>
+                      <div className='one'>
+                        <div className='card h-[300px] inline-block'>
+                          <img src={topratedd.image} className='ss xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[390px] ' style={{ height: "300px" }} />
+                          <div className='info'>
+                            <div class="one1 hover:bg-[#f50963] group xs:mt-[-210px] xs:ml-[240px] sm:mt-[-210px] sm:ml-[210px] md:mt-[-220px] md:ml-[280px] lg:mt-[-240px] lg:ml-[200px] xl:mt-[-260px] xl:ml-[200px] 2xl:mt-[-240px] 2xl:ml-[200px]">
+                              <i onClick={() => dispatch(addTowish(topratedd))} class="fa-regular fa-heart text-[20px] ms-2 mt-2 group-hover:text-white "></i>
+                            </div>
+                            <div class="one2 hover:bg-[#f50963] group xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px] 2xl:ml-[200px]">
+                              <i class="fa-regular fa-eye text-[20px] ms-2 mt-2 group-hover:text-white"></i>
+                            </div>
+                            <div class="one3 hover:bg-[#f50963] xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px]  2xl:ml-[200px]">
+                              <i class="fa-solid fa-link text-[20px] ms-2 mt-2 group-hover:text-white"></i>
+                            </div>
+                          </div>
+                          <div class="info1 xs:ml-[-320px] sm:ml-[-280px] md:ml-[-350px] lg:ml-[-300px] xl:ml-[-280px] 2xl:ml-[-390px]">
+                            <button onClick={() => dispatch(addToCart(topratedd))} class="h-[35px] bg-black text-white  hover:bg-[#f50963] ms-8 lg:ms-[50px] 2xl:ms-[80px] xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[400px]">ADD TO CART</button>
+                          </div>
+
+                        </div>
+                        <p className='mt-4'>{topratedd.Name}</p>
+                        <p className="text-gray-700 mt-1"><del>{topratedd.Delprice}</del> {topratedd.Price}</p>
+                      </div>
+                    </>
+                  )
+                })
+              }
+              {
+                data.filter((el) => { return el.Price >= count && el.Price2 <= count1 }).map(topratedd => {
+                  return (
+                    <>
+                      <div className='one'>
+                        <div className='card h-[300px] inline-block'>
+                          <img src={topratedd.image} className='ss xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[390px] ' style={{ height: "300px" }} />
+                          <div className='info'>
+                            <div class="one1 hover:bg-[#f50963] group xs:mt-[-210px] xs:ml-[240px] sm:mt-[-210px] sm:ml-[210px] md:mt-[-220px] md:ml-[280px] lg:mt-[-240px] lg:ml-[200px] xl:mt-[-260px] xl:ml-[200px] 2xl:mt-[-240px] 2xl:ml-[200px]">
+                              <i onClick={() => dispatch(addTowish(topratedd))} class="fa-regular fa-heart text-[20px] ms-2 mt-2 group-hover:text-white "></i>
+                            </div>
+                            <div class="one2 hover:bg-[#f50963] group xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px] 2xl:ml-[200px]">
+                              <i class="fa-regular fa-eye text-[20px] ms-2 mt-2 group-hover:text-white"></i>
+                            </div>
+                            <div class="one3 hover:bg-[#f50963] xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px]  2xl:ml-[200px]">
+                              <i class="fa-solid fa-link text-[20px] ms-2 mt-2 group-hover:text-white"></i>
+                            </div>
+                          </div>
+                          <div class="info1 xs:ml-[-320px] sm:ml-[-280px] md:ml-[-350px] lg:ml-[-300px] xl:ml-[-280px] 2xl:ml-[-390px]">
+                            <button onClick={() => dispatch(addToCart(topratedd))} class="h-[35px] bg-black text-white  hover:bg-[#f50963] ms-8 lg:ms-[50px] 2xl:ms-[80px] xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[400px]">ADD TO CART</button>
+                          </div>
+
+                        </div>
+                        <p className='mt-4'>{topratedd.Name}</p>
+                        <p className="text-gray-700 mt-1"><del>{topratedd.Delprice}</del> {topratedd.Price}</p>
+                      </div>
+                    </>
+                  )
+                })
+              }
             </div>
+          </div>
         </div>
       </div>
       <nav className='mt-10'>

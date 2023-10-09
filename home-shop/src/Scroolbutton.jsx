@@ -25,8 +25,8 @@ const Scroolbutton = () => {
     window.addEventListener("scroll",tooglevisibale)
 
   return (
-    <div>
-      <button onClick={scrolltoTop} style={{display:visibal ? 'inline': 'none'}} className='bottom-16 right-10 fixed bg-black  rounded-full px-5 py-4'><i className='fa-solid fa-angle-up text-white text-[18px]'></i></button>
+    <div className='xs:m-auto xs:max-w-[290px] sm:max-w-[560px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1120px] 2xl:max-w-[1440px] flex justify-end mt-10'>
+      <button onClick={scrolltoTop} style={{display:visibal ? 'inline': 'none'}} className='bottom-[10px]  fixed bg-black  rounded-full px-5 py-4 z-10 '><i className='fa-solid fa-angle-up text-white text-[18px]'></i></button>
     </div>
   )
 }

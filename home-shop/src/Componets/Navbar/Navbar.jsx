@@ -70,13 +70,13 @@ const Navbar = () => {
                     <a href="#">
                       <img src={aset_91} alt="" />
                     </a>
-                    <a href="#">
+                    <Link to='MyWishlist'>
                       <img src={aset_92} alt="" />
-                      <p className='h-[18px] w-[18px] absolute ms-[11px] mt-[-25px]  text-center bg-red-400  rounded-full z-20'>{WishData.length}</p>
-                    </a>
+                      <p className='h-[24px] w-[24px] absolute ms-[11px] mt-[-25px] text-center bg-red-400  rounded-full z-20 border-2 border-[#f0f2ee]'>{WishData.length}</p>
+                    </Link>
                     <Link to='/Mycart'>
                     <img src={aset_93} alt="" />
-                      <p className='h-[18px] w-[18px] absolute ms-[11px] mt-[-25px]  text-center bg-red-400  rounded-full z-20'>{Data.length}</p>
+                      <p className='h-[24px] w-[24px] absolute ms-[11px] mt-[-25px]  text-center bg-red-400  rounded-full z-20 border-2 border-[#f0f2ee]'>{Data.length}</p>
                       </Link>
                     
                   </div>

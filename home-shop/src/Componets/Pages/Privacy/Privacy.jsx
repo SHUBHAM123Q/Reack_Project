@@ -4,15 +4,15 @@ const Privacy = () => {
   return (
     <>
       <div className='shyam xl:mt-[80px] xs:h-[500px] xs:mt-[80px] sm:h-[550px] md:h-[550px] lg:h-[550px] xl:h-[600px] 2xl:h-[600px]'>
-        <p className='text-center font-[Space Grotesk] font-bold sm:pt-[150px] xl:pt-[70px] xs:text-[40px] sm:text-[50px] xl:text-[70px]'>Privacy Policy</p>
+        <p className='text-center font-[Space Grotesk] font-bold xs:pt-[100px] sm:pt-[150px] xl:pt-[70px] xs:text-[40px] sm:text-[50px] xl:text-[70px]'>Privacy Policy</p>
         <p className='text-center text-slate-500 sm:text-[17px] sm:pt-[20px] sm:max-w-[500px] sm:m-auto md:text-[17px] md:max-w-[630px] lg:max-w-[590px] xl:max-w-[660px] xl:text-[18px] xl:pt-[15px]'>Your privacy is important to us. It is Harry’s policy to respect your privacy regarding
           any information we may collect from you across our website, https:// Harry.com,
           and other sites we own and operate.</p>
       </div>
 
-      <div className='shadow-xl bg-white sm:max-w-[520px] sm:max-h-[1800px] sm:m-auto sm:mt-[-120px] sm:mb-[150px] md:max-w-[700px] md:mt-[-150px] md:mb-[180px] lg:max-w-[930px] lg:mb-[180px] xl:max-w-[1000px] xl:h-[1200px] xl:mb-[200px] xl:m-auto xl:mt-[-255px] 2xl:max-w-[1100px]'>
-        <div className='sm:max-w-[450px] sm:m-auto sm:h-[1630px] md:max-w-[600px] md:h-[1370px] lg:max-w-[800px] lg:h-[1300px] xl:max-w-[880px] xl:h-[1200px] xl:m-auto 2xl:max-w-[1000px]'>
-          <p className='text-[18px] sm:pt-[40px] xl:pt-[55px]'><b>Effective date: May 25, 2023</b></p>
+      <div className='shadow-xl bg-white xs:max-w-[300px] xs:m-auto sm:max-w-[520px] sm:max-h-[1800px] xs:mt-[-150px] sm:m-auto sm:mt-[-120px] sm:mb-[150px] md:max-w-[700px] md:mt-[-150px] md:mb-[180px] lg:max-w-[930px] lg:mb-[180px] xl:max-w-[1000px] xl:h-[1200px] xl:mb-[200px] xl:m-auto xl:mt-[-255px] 2xl:max-w-[1100px]'>
+        <div className='sm:max-w-[450px] xs:max-w-[280px] xs:m-auto sm:m-auto sm:h-[1630px] md:max-w-[600px] md:h-[1370px] lg:max-w-[800px] lg:h-[1300px] xl:max-w-[880px] xl:h-[1200px] xl:m-auto 2xl:max-w-[1000px]'>
+          <p className='text-[18px] xs:pt-[40px] sm:pt-[40px] xl:pt-[55px]'><b>Effective date: May 25, 2023</b></p>
 
           <p className='text-[18px] mt-[10px] text-slate-500'>Harry knows that you care about how your personal information is used and shared, and Harry takes your privacy seriously. Please read the following to learn more about Harry Privacy Policy (“Privacy Policy”). This Privacy Policy also tells you about your rights and choices with respect to your Personal Information, and how you can reach us to update your contact information or get answers to questions you may have<br></br> about our privacy practices.</p>
 
@@ -39,7 +39,7 @@ const Privacy = () => {
 
           <p className='text-[18px] text-slate-500'>You may contact us at any time via:</p>
           <p className='text-[18px] mt-[10px] text-slate-500'><a href='#'>Email: <span className='hover:duration-500 hover:text-[#f50963]'>support@harry.com</span></a></p>
-          <p className='text-[18px] mt-[10px] text-slate-500'><a href='#' className='hover:duration-500 hover:text-[#f50963]'>harry PTY LTD<br></br>
+          <p className='text-[18px] xs:pb-5  mt-[10px] text-slate-500'><a href='#' className='hover:duration-500 hover:text-[#f50963]  '>harry PTY LTD<br></br>
             4270, Brisbane, Australia</a></p>
         </div>
       </div>
