@@ -8,7 +8,7 @@ const Sec1 = () => {
     return (
         <>
             <div className='bg-[#f0f2ee]'>
-                <div className='xs:m-auto xs:max-w-[290px] sm:max-w-[550px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1120px] 2xl:max-w-[1440px]'>
+                <div className='xs:m-auto xs:max-w-[290px] sm:max-w-[550px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1120px] 2xl:max-w-[1440px] '>
                     <div className='grid xl:grid-cols-1'>
                         <div className='xs:mt-[250px] sm:mt-[200px] col-span-1'>
                             <div className='border-4 border-red-400 border-r-0 border-t-0 border-b-0'>

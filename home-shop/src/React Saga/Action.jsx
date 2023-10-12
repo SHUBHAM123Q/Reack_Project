@@ -1,6 +1,12 @@
+import { toast } from "react-toastify";
 import { ADD_TO_CART , ADD_TO_WISH, DECRIMENT_QUT, INCRIMENT_QUT, REMOVE_TO_CART, REMOVE_TO_WISH } from "./Type"
+import "react-toastify/dist/ReactToastify.css";
+
 
 export let addToCart = (data) => {
+    toast.success("Order Coplate",{
+        position:toast.POSITION.TOP_CENTER
+    });
     return{
         type: ADD_TO_CART,
         data
@@ -29,6 +35,9 @@ export let decriment_qty = (data) => {
 }
 
 export let addTowish = (data) => {
+    toast.success("Add Wishlist",{
+        position:toast.POSITION.TOP_CENTER
+    });
     return{
         type: ADD_TO_WISH,
         data

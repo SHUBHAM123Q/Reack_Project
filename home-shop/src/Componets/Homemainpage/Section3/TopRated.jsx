@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { productList } from "../../../React Saga/Product/Productlist"
 import { useEffect } from 'react';
 import { addToCart, addTowish } from "../../../React Saga/Action"
+import {ToastContainer , toast} from 'react-toastify';
 
 const TopRated = () => {
 
@@ -16,6 +17,7 @@ const TopRated = () => {
 
     return (
         <>
+            <ToastContainer/>
             <div className='xs:m-auto xs:max-w-[290px] sm:max-w-[550px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1120px] 2xl:max-w-[1440px]'>
                 <div className='grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-9'>
                     {

@@ -27,6 +27,7 @@ import Community from './Componets/Pages/FAQs/Community';
 import Generalquestions from './Componets/Pages/FAQs/Generalquestions';
 import Support from './Componets/Pages/FAQs/Support';
 import Scroolbutton from './Scroolbutton';
+import Sidebar from './Componets/Navbar/sidebar';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
@@ -34,6 +35,7 @@ root.render(
    <BrowserRouter>
    <Scroolbutton/>
    <Navbar/>
+   <Sidebar/>
    <Routes>
       <Route path="/" element={<Homemainpage/>}>
          <Route path="/" element={<TopRated/>}></Route>
