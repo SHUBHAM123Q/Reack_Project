@@ -6,8 +6,7 @@ import { useSelector } from 'react-redux'
 import { productList } from '../../../React Saga/Product/Productlist'
 import { useEffect } from 'react'
 import { useState } from 'react'
-
-
+import { ToastContainer, toast } from "react-toastify";
 
 const Sec1 = () => {
 
@@ -77,6 +76,7 @@ const Sec1 = () => {
 
   return (
     <>
+      <ToastContainer />
       <div className='xs:m-auto xs:max-w-[290px] sm:max-w-[550px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1120px] 2xl:max-w-[1440px]'>
         <div className='mt-[200px] border-2 py-6 grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2'>
           <div className='py-3'>
@@ -277,7 +277,7 @@ const Sec1 = () => {
               </summary>
               <hr></hr>
               <div className='h-[150px] overflow-auto mt-8'>
-                <input onClick={() => sortOne(20.00 , 49.00)} type='radio' name='brands' className='w-4 h-4 '></input><span className='ms-3 text-[16px]'>$10.00 - $49.00</span><br />
+                <input onClick={() => sortOne(10.00 , 49.00)} type='radio' name='brands' className='w-4 h-4 '></input><span className='ms-3 text-[16px]'>$10.00 - $49.00</span><br />
                 <input onClick={() => sortOne(50.00 , 99.00)} type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>$50.00 - $99.00</span><br />
                 <input onClick={() => sortOne(100.00 , 199.00)} type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>$100.00 - $199.00</span><br />
                 <input onClick={() => sortOne(200.00 , 10000)} type='radio' name='brands' className='w-4 h-4 mt-2'></input><span className='ms-3 text-[16px]'>$200 +</span>
@@ -325,22 +325,22 @@ const Sec1 = () => {
                 data.filter((el) => { return el.brand === count }).map(topratedd => {
                   return (
                     <>
-                      <div className='one'>
+                    <div className='one'>
                         <div className='card h-[300px] inline-block'>
                           <img src={topratedd.image} className='ss xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[390px] ' style={{ height: "300px" }} />
                           <div className='info'>
-                            <div class="one1 hover:bg-[#f50963] group xs:mt-[-210px] xs:ml-[240px] sm:mt-[-210px] sm:ml-[210px] md:mt-[-220px] md:ml-[280px] lg:mt-[-240px] lg:ml-[200px] xl:mt-[-260px] xl:ml-[200px] 2xl:mt-[-240px] 2xl:ml-[200px]">
+                            <div class="one1 hover:bg-[#f50963] group xs:mt-[-210px] xs:ml-[240px] sm:mt-[-210px] sm:ml-[210px] md:mt-[-220px] md:ml-[280px] lg:mt-[-240px] lg:ml-[230px] xl:mt-[-230px] xl:ml-[190px] 2xl:mt-[-240px] 2xl:ml-[200px]">
                               <i onClick={() => dispatch(addTowish(topratedd))} class="fa-regular fa-heart text-[20px] ms-2 mt-2 group-hover:text-white "></i>
                             </div>
-                            <div class="one2 hover:bg-[#f50963] group xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px] 2xl:ml-[200px]">
+                            <div class="one2 hover:bg-[#f50963] group xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[230px] xl:mt-[10px] xl:ml-[190px] 2xl:ml-[200px]">
                               <i class="fa-regular fa-eye text-[20px] ms-2 mt-2 group-hover:text-white"></i>
                             </div>
-                            <div class="one3 hover:bg-[#f50963] xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px]  2xl:ml-[200px]">
+                            <div class="one3 hover:bg-[#f50963] xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[230px] xl:mt-[10px] xl:ml-[190px]  2xl:ml-[200px]">
                               <i class="fa-solid fa-link text-[20px] ms-2 mt-2 group-hover:text-white"></i>
                             </div>
                           </div>
                           <div class="info1 xs:ml-[-320px] sm:ml-[-280px] md:ml-[-350px] lg:ml-[-300px] xl:ml-[-280px] 2xl:ml-[-390px]">
-                            <button onClick={() => dispatch(addToCart(topratedd))} class="h-[35px] bg-black text-white  hover:bg-[#f50963] ms-8 lg:ms-[50px] 2xl:ms-[80px] xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[400px]">ADD TO CART</button>
+                            <button onClick={() => dispatch(addToCart(topratedd))} class="h-[35px] bg-black text-white  hover:bg-[#f50963] ms-8 lg:ms-[30px] 2xl:ms-[80px] xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[400px]">ADD TO CART</button>
                           </div>
 
                         </div>
@@ -355,22 +355,22 @@ const Sec1 = () => {
                 data.filter((el) => { return el.categaty === count }).map(topratedd => {
                   return (
                     <>
-                      <div className='one'>
+                    <div className='one'>
                         <div className='card h-[300px] inline-block'>
                           <img src={topratedd.image} className='ss xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[390px] ' style={{ height: "300px" }} />
                           <div className='info'>
-                            <div class="one1 hover:bg-[#f50963] group xs:mt-[-210px] xs:ml-[240px] sm:mt-[-210px] sm:ml-[210px] md:mt-[-220px] md:ml-[280px] lg:mt-[-240px] lg:ml-[200px] xl:mt-[-260px] xl:ml-[200px] 2xl:mt-[-240px] 2xl:ml-[200px]">
+                            <div class="one1 hover:bg-[#f50963] group xs:mt-[-210px] xs:ml-[240px] sm:mt-[-210px] sm:ml-[210px] md:mt-[-220px] md:ml-[280px] lg:mt-[-240px] lg:ml-[230px] xl:mt-[-230px] xl:ml-[190px] 2xl:mt-[-240px] 2xl:ml-[200px]">
                               <i onClick={() => dispatch(addTowish(topratedd))} class="fa-regular fa-heart text-[20px] ms-2 mt-2 group-hover:text-white "></i>
                             </div>
-                            <div class="one2 hover:bg-[#f50963] group xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px] 2xl:ml-[200px]">
+                            <div class="one2 hover:bg-[#f50963] group xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[230px] xl:mt-[10px] xl:ml-[190px] 2xl:ml-[200px]">
                               <i class="fa-regular fa-eye text-[20px] ms-2 mt-2 group-hover:text-white"></i>
                             </div>
-                            <div class="one3 hover:bg-[#f50963] xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px]  2xl:ml-[200px]">
+                            <div class="one3 hover:bg-[#f50963] xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[230px] xl:mt-[10px] xl:ml-[190px]  2xl:ml-[200px]">
                               <i class="fa-solid fa-link text-[20px] ms-2 mt-2 group-hover:text-white"></i>
                             </div>
                           </div>
                           <div class="info1 xs:ml-[-320px] sm:ml-[-280px] md:ml-[-350px] lg:ml-[-300px] xl:ml-[-280px] 2xl:ml-[-390px]">
-                            <button onClick={() => dispatch(addToCart(topratedd))} class="h-[35px] bg-black text-white  hover:bg-[#f50963] ms-8 lg:ms-[50px] 2xl:ms-[80px] xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[400px]">ADD TO CART</button>
+                            <button onClick={() => dispatch(addToCart(topratedd))} class="h-[35px] bg-black text-white  hover:bg-[#f50963] ms-8 lg:ms-[30px] 2xl:ms-[80px] xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[400px]">ADD TO CART</button>
                           </div>
 
                         </div>
@@ -385,22 +385,22 @@ const Sec1 = () => {
                 data.filter((el) => { return el.type === count }).map(topratedd => {
                   return (
                     <>
-                      <div className='one'>
+                    <div className='one'>
                         <div className='card h-[300px] inline-block'>
                           <img src={topratedd.image} className='ss xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[390px] ' style={{ height: "300px" }} />
                           <div className='info'>
-                            <div class="one1 hover:bg-[#f50963] group xs:mt-[-210px] xs:ml-[240px] sm:mt-[-210px] sm:ml-[210px] md:mt-[-220px] md:ml-[280px] lg:mt-[-240px] lg:ml-[200px] xl:mt-[-260px] xl:ml-[200px] 2xl:mt-[-240px] 2xl:ml-[200px]">
+                            <div class="one1 hover:bg-[#f50963] group xs:mt-[-210px] xs:ml-[240px] sm:mt-[-210px] sm:ml-[210px] md:mt-[-220px] md:ml-[280px] lg:mt-[-240px] lg:ml-[230px] xl:mt-[-230px] xl:ml-[190px] 2xl:mt-[-240px] 2xl:ml-[200px]">
                               <i onClick={() => dispatch(addTowish(topratedd))} class="fa-regular fa-heart text-[20px] ms-2 mt-2 group-hover:text-white "></i>
                             </div>
-                            <div class="one2 hover:bg-[#f50963] group xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px] 2xl:ml-[200px]">
+                            <div class="one2 hover:bg-[#f50963] group xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[230px] xl:mt-[10px] xl:ml-[190px] 2xl:ml-[200px]">
                               <i class="fa-regular fa-eye text-[20px] ms-2 mt-2 group-hover:text-white"></i>
                             </div>
-                            <div class="one3 hover:bg-[#f50963] xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px]  2xl:ml-[200px]">
+                            <div class="one3 hover:bg-[#f50963] xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[230px] xl:mt-[10px] xl:ml-[190px]  2xl:ml-[200px]">
                               <i class="fa-solid fa-link text-[20px] ms-2 mt-2 group-hover:text-white"></i>
                             </div>
                           </div>
                           <div class="info1 xs:ml-[-320px] sm:ml-[-280px] md:ml-[-350px] lg:ml-[-300px] xl:ml-[-280px] 2xl:ml-[-390px]">
-                            <button onClick={() => dispatch(addToCart(topratedd))} class="h-[35px] bg-black text-white  hover:bg-[#f50963] ms-8 lg:ms-[50px] 2xl:ms-[80px] xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[400px]">ADD TO CART</button>
+                            <button onClick={() => dispatch(addToCart(topratedd))} class="h-[35px] bg-black text-white  hover:bg-[#f50963] ms-8 lg:ms-[30px] 2xl:ms-[80px] xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[400px]">ADD TO CART</button>
                           </div>
 
                         </div>
@@ -415,22 +415,22 @@ const Sec1 = () => {
                 data.filter((el) => { return el.color === count }).map(topratedd => {
                   return (
                     <>
-                      <div className='one'>
+                    <div className='one'>
                         <div className='card h-[300px] inline-block'>
                           <img src={topratedd.image} className='ss xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[390px] ' style={{ height: "300px" }} />
                           <div className='info'>
-                            <div class="one1 hover:bg-[#f50963] group xs:mt-[-210px] xs:ml-[240px] sm:mt-[-210px] sm:ml-[210px] md:mt-[-220px] md:ml-[280px] lg:mt-[-240px] lg:ml-[200px] xl:mt-[-260px] xl:ml-[200px] 2xl:mt-[-240px] 2xl:ml-[200px]">
+                            <div class="one1 hover:bg-[#f50963] group xs:mt-[-210px] xs:ml-[240px] sm:mt-[-210px] sm:ml-[210px] md:mt-[-220px] md:ml-[280px] lg:mt-[-240px] lg:ml-[230px] xl:mt-[-230px] xl:ml-[190px] 2xl:mt-[-240px] 2xl:ml-[200px]">
                               <i onClick={() => dispatch(addTowish(topratedd))} class="fa-regular fa-heart text-[20px] ms-2 mt-2 group-hover:text-white "></i>
                             </div>
-                            <div class="one2 hover:bg-[#f50963] group xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px] 2xl:ml-[200px]">
+                            <div class="one2 hover:bg-[#f50963] group xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[230px] xl:mt-[10px] xl:ml-[190px] 2xl:ml-[200px]">
                               <i class="fa-regular fa-eye text-[20px] ms-2 mt-2 group-hover:text-white"></i>
                             </div>
-                            <div class="one3 hover:bg-[#f50963] xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px]  2xl:ml-[200px]">
+                            <div class="one3 hover:bg-[#f50963] xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[230px] xl:mt-[10px] xl:ml-[190px]  2xl:ml-[200px]">
                               <i class="fa-solid fa-link text-[20px] ms-2 mt-2 group-hover:text-white"></i>
                             </div>
                           </div>
                           <div class="info1 xs:ml-[-320px] sm:ml-[-280px] md:ml-[-350px] lg:ml-[-300px] xl:ml-[-280px] 2xl:ml-[-390px]">
-                            <button onClick={() => dispatch(addToCart(topratedd))} class="h-[35px] bg-black text-white  hover:bg-[#f50963] ms-8 lg:ms-[50px] 2xl:ms-[80px] xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[400px]">ADD TO CART</button>
+                            <button onClick={() => dispatch(addToCart(topratedd))} class="h-[35px] bg-black text-white  hover:bg-[#f50963] ms-8 lg:ms-[30px] 2xl:ms-[80px] xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[400px]">ADD TO CART</button>
                           </div>
 
                         </div>
@@ -442,25 +442,25 @@ const Sec1 = () => {
                 })
               }
               {
-                data.filter((el) => { return el.Price >= count && el.Price2 <= count1 }).map(topratedd => {
+                data.filter((el) => { return el.Price >= count && el.price2 <= count1 }).map(topratedd => {
                   return (
                     <>
-                      <div className='one'>
+                    <div className='one'>
                         <div className='card h-[300px] inline-block'>
                           <img src={topratedd.image} className='ss xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[390px] ' style={{ height: "300px" }} />
                           <div className='info'>
-                            <div class="one1 hover:bg-[#f50963] group xs:mt-[-210px] xs:ml-[240px] sm:mt-[-210px] sm:ml-[210px] md:mt-[-220px] md:ml-[280px] lg:mt-[-240px] lg:ml-[200px] xl:mt-[-260px] xl:ml-[200px] 2xl:mt-[-240px] 2xl:ml-[200px]">
+                            <div class="one1 hover:bg-[#f50963] group xs:mt-[-210px] xs:ml-[240px] sm:mt-[-210px] sm:ml-[210px] md:mt-[-220px] md:ml-[280px] lg:mt-[-240px] lg:ml-[230px] xl:mt-[-230px] xl:ml-[190px] 2xl:mt-[-240px] 2xl:ml-[200px]">
                               <i onClick={() => dispatch(addTowish(topratedd))} class="fa-regular fa-heart text-[20px] ms-2 mt-2 group-hover:text-white "></i>
                             </div>
-                            <div class="one2 hover:bg-[#f50963] group xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px] 2xl:ml-[200px]">
+                            <div class="one2 hover:bg-[#f50963] group xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[230px] xl:mt-[10px] xl:ml-[190px] 2xl:ml-[200px]">
                               <i class="fa-regular fa-eye text-[20px] ms-2 mt-2 group-hover:text-white"></i>
                             </div>
-                            <div class="one3 hover:bg-[#f50963] xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[200px] xl:mt-[10px] xl:ml-[200px]  2xl:ml-[200px]">
+                            <div class="one3 hover:bg-[#f50963] xs:mt-[5px] xs:ml-[240px] sm:mt-[5px] sm:ml-[210px] md:mt-[5px] md:ml-[280px] lg:mt-[10px] lg:ml-[230px] xl:mt-[10px] xl:ml-[190px]  2xl:ml-[200px]">
                               <i class="fa-solid fa-link text-[20px] ms-2 mt-2 group-hover:text-white"></i>
                             </div>
                           </div>
                           <div class="info1 xs:ml-[-320px] sm:ml-[-280px] md:ml-[-350px] lg:ml-[-300px] xl:ml-[-280px] 2xl:ml-[-390px]">
-                            <button onClick={() => dispatch(addToCart(topratedd))} class="h-[35px] bg-black text-white  hover:bg-[#f50963] ms-8 lg:ms-[50px] 2xl:ms-[80px] xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[400px]">ADD TO CART</button>
+                            <button onClick={() => dispatch(addToCart(topratedd))} class="h-[35px] bg-black text-white  hover:bg-[#f50963] ms-8 lg:ms-[30px] 2xl:ms-[80px] xs:w-[320px] sm:w-[260px] md:w-[340px] lg:w-[275px] xl:w-[260px] 2xl:w-[400px]">ADD TO CART</button>
                           </div>
 
                         </div>
