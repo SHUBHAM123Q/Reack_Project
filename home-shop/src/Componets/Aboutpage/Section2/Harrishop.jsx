@@ -5,7 +5,7 @@ import aset_22 from "../assets/asset22.jpeg"
 const Harrishop = () => {
   return (
    <>
-        <div className='h-[580px] w-full iphone relative' style={{backgroundImage: `url(${aset_22})`, backgroundSize:"cover"}}>
+        <div className='h-[580px] w-auto iphone relative' style={{backgroundImage: `url(${aset_22})`, backgroundSize:"cover"}}>
             <div className='ovelay absolute'></div><br/>
             <div className='mt-[220px]'>
               <p className='text-center font-sans text-[18px] leading-[19.98px] text-[#ffff] font-medium'>Aboutus us</p>

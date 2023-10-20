@@ -1,5 +1,5 @@
-import React from "react";
-import { Link} from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import aset_0 from "../../assets/asset0.svg";
 import aset_90 from "../../assets/asset90.svg";
@@ -12,6 +12,12 @@ initTE({ Offcanvas, Ripple });
 const Navbar = () => {
   let Data = useSelector((state) => state.cartData);
   let WishData = useSelector((state) => state.whishData);
+
+  const [ismenuopen, setismenuopen] = useState(false);
+
+  const toggalebutton = () => {
+    setismenuopen(!ismenuopen);
+  }
 
   return (
     <>
@@ -127,7 +133,6 @@ const Navbar = () => {
                   </li>
                 </ul>
               </div>
-
               <div className="flex">
                 <div className="flex gap-6 xs:hidden md:flex me-[30px]">
                   <Link to="/Shop">
@@ -150,14 +155,7 @@ const Navbar = () => {
                   </Link>
                 </div>
                 <div className="xl:hidden">
-                  <button
-                    type="button"
-                    data-te-offcanvas-toggle
-                    data-te-target="#offcanvasRight"
-                    aria-controls="offcanvasRight"
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                  >
+                  <button onClick={toggalebutton}>
                     <div className="group w-7 ms-2">
                       <span className="h-[2px] w-6 bg-black block group-hover:bg-pink-500 translate-x-0 duration-500 group-hover:translate-x-2 group-hover:transition-transform group-hover:duration-300 group-hover:ease-linear"></span>
                       <span className="h-[2px] w-4 bg-black block my-[5px] mx-auto group-hover:bg-pink-500"></span>
@@ -165,16 +163,11 @@ const Navbar = () => {
                     </div>
                   </button>
                 </div>
-
-                <div
-                  class="invisible fixed bottom-0 right-0 top-0 z-[1045] flex xs:w-[350px] sm:w-full lg:w-[350px] max-w-full translate-x-full flex-col border-none bg-white bg-clip-padding text-neutral-700 shadow-sm outline-none transition duration-300 ease-in-out dark:bg-neutral-800 dark:text-neutral-200 [&[data-te-offcanvas-show]]:transform-none"
-                  tabindex="-1"
-                  id="offcanvasRight"
-                  aria-labelledby="offcanvasRightLabel"
-                  data-te-offcanvas-init
-                >
-                  <div class="offcanvas-body flex-grow overflow-y-auto p-4">
-                    <div className="xs:m-auto xs:max-w-[290px] sm:max-w-[550px] md:max-w-[700px] ">
+              </div>
+              {ismenuopen && (
+                <div className="bg-white border-2 w-full sm:w-[400px] h-full fixed top-0 xs:right-0 sm:right-18 z-50 overflow-y-scroll">
+                  <div class="flex-grow p-4">
+                    <div className="xs:m-auto xs:max-w-[290px] sm:max-w-[300px] md:max-w-[700px] ">
                       <div className="grid xs:grid-cols-1 mt-10 max-w-[260px] m-auto">
                         <div className="flex justify-between items-center h-full">
                           <div>
@@ -187,10 +180,7 @@ const Navbar = () => {
                             </Link>
                           </div>
                           <div className="group flex justify-center items-center">
-                            <button className="border-2 h-10 w-10 group-hover:text-white hover:duration-700 group-hover:bg-pink-500 rounded-full"
-                              type="button"
-                              data-te-offcanvas-dismiss
-                            >
+                            <button className="border-2 h-10 w-10 group-hover:text-white hover:duration-700 group-hover:bg-pink-500 rounded-full" onClick={toggalebutton}>
                               <div>
                                 <span class="fa-solid fa-xmark text-lg block"></span>
                               </div>
@@ -235,7 +225,6 @@ const Navbar = () => {
                         <p className="text-lg mt-2 hover:text-pink-500 hover:duration-700">
                           info@harry.com
                         </p>
-
                         <div className="mt-10">
                           <Link
                             className="text-[20px] text-black font-bold hover:text-red-600 hover:duration-700"
@@ -276,7 +265,7 @@ const Navbar = () => {
                                 <Link
                                   className="text-[18px] text-black font-bold hover:text-red-600 ms-5 hover:duration-700"
                                   style={{ fontFamily: "sans-serif" }}
-                                  to="/FAQs" 
+                                  to="/FAQs"
                                 >
                                   FAQs
                                 </Link>
@@ -284,7 +273,7 @@ const Navbar = () => {
                                 <Link
                                   className="text-[18px] text-black font-bold hover:text-red-600 ms-5 hover:duration-700"
                                   style={{ fontFamily: "sans-serif" }}
-                                  to="/Privacy" 
+                                  to="/Privacy"
                                 >
                                   Privacy & Policy
                                 </Link>
@@ -292,7 +281,7 @@ const Navbar = () => {
                                 <Link
                                   className="text-[18px] text-black font-bold hover:text-red-600 ms-5 hover:duration-700"
                                   style={{ fontFamily: "sans-serif" }}
-                                  to="/Terms" 
+                                  to="/Terms"
                                 >
                                   Terms & conditions
                                 </Link>
@@ -300,7 +289,7 @@ const Navbar = () => {
                                 <Link
                                   className="text-[18px] text-black font-bold hover:text-red-600 ms-5 hover:duration-700"
                                   style={{ fontFamily: "sans-serif" }}
-                                  to="/Login" 
+                                  to="/Login"
                                 >
                                   Login
                                 </Link>
@@ -316,7 +305,7 @@ const Navbar = () => {
                                 <Link
                                   className="text-[18px] text-black font-bold hover:text-red-600 ms-5 hover:duration-700"
                                   style={{ fontFamily: "sans-serif" }}
-                                  to="/Mycart" 
+                                  to="/Mycart"
                                 >
                                   My Cart
                                 </Link>
@@ -332,7 +321,7 @@ const Navbar = () => {
                                 <Link
                                   className="text-[18px] text-black font-bold hover:text-red-600 ms-5 hover:duration-700"
                                   style={{ fontFamily: "sans-serif" }}
-                                  to="./Checkout" 
+                                  to="./Checkout"
                                 >
                                   Checkout
                                 </Link>
@@ -340,7 +329,7 @@ const Navbar = () => {
                                 <Link
                                   className="text-[18px] text-black font-bold hover:text-red-600 ms-5 hover:duration-700"
                                   style={{ fontFamily: "sans-serif" }}
-                                  to="/Pages" 
+                                  to="/Pages"
                                 >
                                   Error 404
                                 </Link>
@@ -360,8 +349,7 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
-
-              </div>
+              )}
             </nav>
           </header>
         </div>

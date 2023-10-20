@@ -4,7 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 
 export let addToCart = (data) => {
-    toast.success("Order Coplate",{
+    toast.success("Order Complate",{
         position:toast.POSITION.TOP_CENTER
     });
     return{
